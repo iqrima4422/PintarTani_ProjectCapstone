@@ -19,16 +19,6 @@
              <a href="#team" class="nav-item nav-link">Profil</a>
              <a href="#produkpertanian" class="nav-item nav-link">produk</a>
              <a href="#informasi" class="nav-item nav-link">Edukasi</a>
-             <!-- <div class="nav-item dropdown">
-                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                 <div class="dropdown-menu bg-light m-0">
-                     <a href="feature.html" class="dropdown-item">Features</a>
-                     <a href="quote.html" class="dropdown-item">Free Quote</a>
-                     <a href="team.html" class="dropdown-item">Our Team</a>
-                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                     <a href="404.html" class="dropdown-item">404 Page</a>
-                 </div>
-             </div> -->
              <a href="#kontak" class="nav-item nav-link">Kontak </a>
          </div>
          <a href="{{ route('LoginPage') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Masuk<i

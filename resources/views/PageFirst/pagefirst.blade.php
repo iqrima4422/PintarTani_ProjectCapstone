@@ -6,12 +6,12 @@
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="img3/carousel-1.jpg" alt="Image">
+                <img class="w-100" src="img3/corousel-2.jpg" alt="Image">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h1 class="display-1 text-white mb-5 animated slideInDown">Make Your Home Like Garden
+                                <h1 class="display-1 text-white mb-5 animated slideInDown">Berkolaborasi Dengan Pemerintahan Desa
                                 </h1>
                                 <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
                                     Lebih Lanjut</a>
@@ -21,13 +21,26 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="img3/carousel-2.jpg" alt="Image">
+                <img class="w-100" src="img3/corousel-1.jpg" alt="Image">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-7">
-                                <h1 class="display-1 text-white mb-5 animated slideInDown">Create Your Own Small Garden
-                                    At Home</h1>
+                                <h1 class="display-1 text-white mb-5 animated slideInDown">Hasil Panen Yang Berkualitas</h1>
+                                <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
+                                    Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img3/corousel-3.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <h1 class="display-1 text-white mb-5 animated slideInDown">Kerjasama Nyata Dengan Masyarakat Dan Pemuda Desa</h1>
                                 <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
                                     Lebih Lanjut</a>
                             </div>
@@ -55,39 +68,30 @@
         <div class="row gx-0">
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                            <i class="fa fa-times text-primary"></i>
-                        </div>
+                    <div class="d-flex">                        
                         <div class="ps-3">
-                            <h4>No Hidden Cost</h4>
-                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                            <h4>Green Economy</h4>
+                            <span>Ekonomi berkelanjutan dan penurunan risiko kerusakan lingkungan</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
+                    <div class="d-flex">                        
                         <div class="ps-3">
-                            <h4>Dedicated Team</h4>
-                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                            <h4>Collaborative Governance</h4>
+                            <span>Edukasi teknik pertanian yang ramah lingkungan dan berkelanjutan</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                            <i class="fa fa-phone text-primary"></i>
-                        </div>
+                    <div class="d-flex">                        
                         <div class="ps-3">
-                            <h4>24/7 Available</h4>
-                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                            <h4>Scalable Business</h4>
+                            <span>Model bisnis yang memungkinkan tumbuh berkembang secara eksponensial</span>
                         </div>
                     </div>
                 </div>
@@ -103,14 +107,16 @@
     <div class="container">
         <div class="row g-5 align-items-end">
             <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="img-fluid rounded" data-wow-delay="0.1s" src="img3/about.jpg">
+            <video width="300" height="590" controls>
+                <source src="img3/about.mp4" type="video/mp4">                
+            </video>
             </div>
             <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                <h1 class="display-1 text-primary mb-0">25</h1>
-                <p class="text-primary mb-4">Year of Experience</p>
-                <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                    eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="display-1 text-primary mb-0">Desa</h1>
+                <p class="text-primary mb-4">Tadukan Raga</p>
+                <h1 class="display-5 mb-4">Potensi Besar Di Desa Terpencil</h1>
+                <p class="mb-4">Dengan Luas lahan pertanian <strong>760 Ha</strong> dan lahan persawahan seluas <strong>240 Ha</strong>. Melalui potensi lahan yang tak bisa dianggap sebelah mata membuktikan adanya potensi aspek sosial dan ekonomi yang berguna untuk meningkatkan kesejahteraan serta mengatasi ketimpangan sosial masyarakat di Desa Tadukan Raga.
+                </p>
                 <a class="btn btn-primary py-3 px-4" href="{{ route('LoginPage') }}">Telusuri Lebih Lanjut</a>
             </div>
             <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
@@ -118,15 +124,15 @@
                     <div class="col-12 col-sm-6 col-lg-12">
                         <div class="border-start ps-4">
                             <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                            <h4 class="mb-3">Award Winning</h4>
-                            <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            <h4 class="mb-3">Kesuburan Tanah</h4>
+                            <span>Potensi pertanian dan persawahan yang luar biasa</span>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-12">
                         <div class="border-start ps-4">
                             <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                            <h4 class="mb-3">Dedicated Team</h4>
-                            <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            <h4 class="mb-3">Kolaborasi Epik</h4>
+                            <span>Sebagai kotalisator kolaborasi pemerintahan, masyarakat desa, dan teknologi</span>
                         </div>
                     </div>
                 </div>
@@ -142,20 +148,20 @@
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+                <h1 class="display-4 text-white" data-toggle="counter-up">5861</h1>
+                <span class="fs-5 fw-semi-bold text-light">Penduduk</span>
             </div>
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+                <h1 class="display-4 text-white" data-toggle="counter-up">572</h1>
+                <span class="fs-5 fw-semi-bold text-light">SMA</span>
             </div>
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+                <h1 class="display-4 text-white" data-toggle="counter-up">689</h1>
+                <span class="fs-5 fw-semi-bold text-light">SMK</span>
             </div>
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                <h1 class="display-4 text-white" data-toggle="counter-up">92</h1>
+                <span class="fs-5 fw-semi-bold text-light">Sarjana</span>
             </div>
         </div>
     </div>
@@ -168,10 +174,9 @@
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
-                <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                    eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <p class="fs-5 fw-bold text-primary">Kenapa pilih kami !</p>
+                <h1 class="display-5 mb-4">Beberapa Alasan Yang Menguatkan</h1>
+                <p class="mb-4">Membeli produk pertanian dari desa mendukung perekonomian lokal, memberikan kehidupan berkelanjutan bagi petani, serta menyediakan makanan segar dan berkualitas.</p>
                 <a class="btn btn-primary py-3 px-4" href="{{ route('LoginPage') }}">Telusuri Lebih Lanjut</a>
             </div>
             <div class="col-lg-6">
@@ -185,7 +190,7 @@
                                         style="width: 90px; height: 90px;">
                                         <i class="fa fa-check fa-3x text-primary"></i>
                                     </div>
-                                    <h4 class="mb-0">100% Satisfaction</h4>
+                                    <h4 class="mb-0">100% Produk Desa</h4>
                                 </div>
                             </div>
                             <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
@@ -195,7 +200,7 @@
                                         style="width: 90px; height: 90px;">
                                         <i class="fa fa-users fa-3x text-primary"></i>
                                     </div>
-                                    <h4 class="mb-0">Dedicated Team</h4>
+                                    <h4 class="mb-0">Pemberdayaan Masyarakat</h4>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +211,7 @@
                                 style="width: 90px; height: 90px;">
                                 <i class="fa fa-tools fa-3x text-primary"></i>
                             </div>
-                            <h4 class="mb-0">Modern Equipment</h4>
+                            <h4 class="mb-0">Peralatan Tradisional</h4>
                         </div>
                     </div>
                 </div>
@@ -217,240 +222,74 @@
 <!-- Features End -->
 
 
-<!-- Service Start -->
+<!-- Education Service Start -->
 <div class="container-xxl py-5" id="informasi">
     <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-bold text-primary">Our Services</p>
-            <h1 class="display-5 mb-5">Services That We Offer For You</h1>
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">            
+            <h1 class="display-5 mb-5">Layanan Edukasi</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-1.jpg" alt="">
-                    </div>
+                <div class="service-item rounded d-flex h-100">                    
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
                             <img class="img-fluid" src="img3/icon/icon-3.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Landscaping</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
+                        <p class="mb-4">Seni merancang dan mengatur elemen-elemen dalam lingkungan luar, seperti taman, halaman, atau area publik.</p>
                         <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-2.jpg" alt="">
-                    </div>
+                <div class="service-item rounded d-flex h-100">                    
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
                             <img class="img-fluid" src="img3/icon/icon-6.png" alt="Icon">
                         </div>
-                        <h4 class="mb-3">Pruning plants</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
+                        <h4 class="mb-3">Agroforestri</h4>
+                        <p class="mb-4">Menggabungkan pohon atau tanaman kehutanan dengan tanaman pertanian untuk meningkatkan produktivitas, meningkatkan kesuburan tanah, dan menyediakan layanan ekosistem.</p>
                         <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-3.jpg" alt="">
-                    </div>
+                <div class="service-item rounded d-flex h-100">                    
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
                             <img class="img-fluid" src="img3/icon/icon-5.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Irrigation & Drainage</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
+                        <p class="mb-4">Menggunakan teknik irigasi yang efisien seperti irigasi tetes atau irigasi berbasis kebutuhan untuk mengurangi penggunaan air yang berlebihan.</p>
                         <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-4.jpg" alt="">
-                    </div>
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-4.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Garden Maintenance </h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-5.jpg" alt="">
-                    </div>
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-8.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Green Technology</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-img rounded">
-                        <img class="img-fluid" src="img3/service-6.jpg" alt="">
-                    </div>
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-2.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Urban Gardening</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
+            </div>            
         </div>
     </div>
 </div>
-<!-- Service End -->
-
-<!-- Projects Start -->
-<div class="container-xxl py-5" id="produkpertanian">
-    <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-bold text-primary">Our Projects</p>
-            <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="0.3s">
-            <div class="col-12 text-center">
-                <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                    <li class="mx-2 active" data-filter="*">All</li>
-                    <li class="mx-2" data-filter=".first">Complete Projects</li>
-                    <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row g-4 portfolio-container">
-            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-1.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Landscaping</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-1.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-2.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Pruning plants</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-2.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-3.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Irrigation & Drainage</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-3.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-4.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Garden Maintenance</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-4.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-5.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Green Technology</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-5.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-6.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Urban Gardening</h4>
-                        <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-6.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Projects End -->
-
+<!-- Education Service End -->
 
 <!-- Team Start -->
 <div class="container-xxl py-5" id="team">
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="fs-5 fw-bold text-primary">Tim Kami</p>
-            <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+            <h1 class="display-5 mb-5">Anggota Tim yang Berdedikasi & Berpengalaman</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item rounded">
                     <img class="img-fluid" src="img3/team-1.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Doris Jordan</h4>
-                        <p class="text-primary">Landscape Designer</p>
+                        <h4 class="mb-0">Iqri Mannisa' Buchori</h4>
+                        <p class="text-primary">Frontend Developer</p>
                         <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href="https://www.linkedin.com/in/iqri-mannisa-buchori-451b531bb/"><i class="fab fa-linkedin"></i></a>                           
+                            <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/iqrimabcr_/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -459,12 +298,11 @@
                 <div class="team-item rounded">
                     <img class="img-fluid" src="img3/team-2.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Johnny Ramirez</h4>
-                        <p class="text-primary">Garden Designer</p>
+                        <h4 class="mb-0">Yoga Rahmahadi</h4>
+                        <p class="text-primary">Backend Developer</p>
                         <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href="https://www.linkedin.com/in/yoga-rahmahadi/"><i class="fab fa-linkedin"></i></a>                            
+                            <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/yoga.r_/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -473,26 +311,24 @@
                 <div class="team-item rounded">
                     <img class="img-fluid" src="img3/team-3.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Diana Wagner</h4>
-                        <p class="text-primary">Senior Gardener</p>
+                        <h4 class="mb-0">Achmad Syarif Arifiansyah</h4>
+                        <p class="text-primary">Backend Developer</p>
                         <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href="https://www.linkedin.com/in/achmad-syarif-arifiansyah-b45361166/"><i class="fab fa-linkedin"></i></a>                            
+                            <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/syarifian02?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item rounded">
-                    <img class="img-fluid" src="img3/team-3.jpg" alt="">
+                    <img class="img-fluid" src="img3/team-4.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Diana Wagner</h4>
-                        <p class="text-primary">Senior Gardener</p>
+                        <h4 class="mb-0">Muhammad Rizqy Akbar</h4>
+                        <p class="text-primary">Frontend Developer</p>
                         <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href="https://www.linkedin.com/in/muhammad-rizqy-akbar-1580b8234/"><i class="fab fa-linkedin"></i></a>                            
+                            <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/rizzqy.akbar?igshid=ZGUzMzM3NWJiOQ=="><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
