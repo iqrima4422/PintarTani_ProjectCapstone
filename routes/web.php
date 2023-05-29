@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PageFirstController;
 
 /*
@@ -19,6 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', [PageFirstController::class, 'pageindex'])->name('welcome');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/login', function () {
@@ -35,4 +40,9 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::post('/postProfileAdmin', [AdminController::class, 'updateDataAdmin'])->name('PostProfileAdmin');
     Route::get('/contactAdmin', [AdminController::class, 'contact'])->name('ContactAdminPage');
     Route::post('/changePassword', [AdminController::class, 'updateDataPassword'])->name('ChangePasswordAdmin');
+});
+
+Route::middleware(['auth', 'cekLevel:user'])->group(function () {
+    Route::get('/home', [HomePageController::class, 'index'])->name('HomePage');
+    Route::get('/profile', [HomePageController::class, 'profile'])->name('ProfilePage');
 });
