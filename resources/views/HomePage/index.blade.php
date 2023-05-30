@@ -1,6 +1,5 @@
-@extends('PageFirst.layout')
+@extends('HomePage.layout')
 @section('content')
-
 <!-- Carousel Start -->
 <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -115,7 +114,8 @@
                 </video>
             </div>
             <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                <h1 class="display-1 text-primary mb-0">Desa <br> Tadukan Raga</h1>
+                <p class="text-primary mb-4">Desa</p>
+                <h1 class="display-1 text-primary mb-0">Tadukan Raga</h1>
                 <h1 class="display-5 mb-4">Potensi Besar Di Desa Terpencil</h1>
                 <p class="mb-4">Dengan Luas lahan pertanian <strong>760 Ha</strong> dan lahan persawahan seluas
                     <strong>240 Ha</strong>. Melalui potensi lahan yang tak bisa dianggap sebelah mata membuktikan
@@ -227,6 +227,105 @@
 </div>
 <!-- Features End -->
 
+<!-- Projects Start -->
+<div class="container-xxl py-5" id="produkpertanian">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-primary">Hasil Panen Unggulan</p>
+            <h1 class="display-7 mb-4">Beberapa Produk Pertanian Desa Taduka Raga</h1>
+        </div>
+        <div class="row wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                    <li class="mx-2 active" data-filter="*">All</li>
+                    <li class="mx-2" data-filter=".first">Tanaman Umbi</li>
+                    <li class="mx-2" data-filter=".second">Tanaman Biji</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-4 portfolio-container">
+            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img/product/ubi-jalar.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Ubi Jalar</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/ubi-jalar.jpg.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img/product/Singkong.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Singkong</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Singkong.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img/product/padi.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Padi</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/padi.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img/product/jagung.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Garden Maintenance</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/jagung.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img3/service-5.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Green Technology</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-5.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner rounded">
+                    <img class="img-fluid" src="img3/service-6.jpg" alt="">
+                    <div class="portfolio-text">
+                        <h4 class="text-white mb-4">Urban Gardening</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-6.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
 
 <!-- Education Service Start -->
 <div class="container-xxl py-5" id="informasi">
@@ -282,83 +381,4 @@
     </div>
 </div>
 <!-- Education Service End -->
-
-<!-- Team Start -->
-<div class="container-xxl py-5" id="team">
-    <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-bold text-primary">Tim Kami</p>
-            <h1 class="display-5 mb-5">Anggota Tim yang Berdedikasi & Berpengalaman</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item rounded">
-                    <img class="img-fluid" src="img3/team-1.jpg" alt="">
-                    <div class="team-text">
-                        <h4 class="mb-0">Iqri Mannisa' Buchori</h4>
-                        <p class="text-primary">Frontend Developer</p>
-                        <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://www.linkedin.com/in/iqri-mannisa-buchori-451b531bb/"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/iqrimabcr_/"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item rounded">
-                    <img class="img-fluid" src="img3/team-2.jpg" alt="">
-                    <div class="team-text">
-                        <h4 class="mb-0">Yoga Rahmahadi</h4>
-                        <p class="text-primary">Backend Developer</p>
-                        <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://www.linkedin.com/in/yoga-rahmahadi/"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/yoga.r_/"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item rounded">
-                    <img class="img-fluid" src="img3/team-3.jpg" alt="">
-                    <div class="team-text">
-                        <h4 class="mb-0">Achmad Syarif Arifiansyah</h4>
-                        <p class="text-primary">Backend Developer</p>
-                        <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://www.linkedin.com/in/achmad-syarif-arifiansyah-b45361166/"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://instagram.com/syarifian02?igshid=MzNlNGNkZWQ4Mg=="><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item rounded">
-                    <img class="img-fluid" src="img3/team-4.jpg" alt="">
-                    <div class="team-text">
-                        <h4 class="mb-0">Muhammad Rizqy Akbar</h4>
-                        <p class="text-primary">Frontend Developer</p>
-                        <div class="team-social d-flex">
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://www.linkedin.com/in/muhammad-rizqy-akbar-1580b8234/"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square rounded-circle me-2"
-                                href="https://instagram.com/rizzqy.akbar?igshid=ZGUzMzM3NWJiOQ=="><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
-
 @endsection

@@ -20,4 +20,9 @@ class HomePageController extends Controller
     {
         return view('HomePage.profile', [], ['tittle' => 'Profile Page']);
     }
+
+    function contact()
+    {
+        return view('HomePage.contact', ['tittle' => 'Contact Page']);
+    }
 }
