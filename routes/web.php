@@ -40,6 +40,13 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::post('/postProfileAdmin', [AdminController::class, 'updateDataAdmin'])->name('PostProfileAdmin');
     Route::get('/contactAdmin', [AdminController::class, 'contact'])->name('ContactAdminPage');
     Route::post('/changePassword', [AdminController::class, 'updateDataPassword'])->name('ChangePasswordAdmin');
+
+    Route::get('/edit/{id}', [AdminController::class, 'edit'])->name('EditUser');
+    Route::post('/update/{id}', [AdminController::class, 'updateDataUser'])->name('UpdateUser');
+    Route::get('/printdata', [AdminController::class, 'cetakDataUser'])->name('CetakDataUser');
+    Route::get('/createUser', [AdminController::class, 'createUser'])->name('CreateUser');
+    Route::post('/postCreateUser', [AdminController::class, 'storeUser'])->name('PostCreateUser');
+    Route::get('/delete/{id}', [AdminController::class, 'destroy'])->name('DeletePengguna');
 });
 
 Route::middleware(['auth', 'cekLevel:user'])->group(function () {

@@ -48,8 +48,8 @@
               <p>Profile</p>
             </a>
           </li> -->
-         
-          <li class="nav-item">
+
+          {{-- <li class="nav-item">
             <a href="#" class="nav-link">
             <i class="bi bi-clipboard2-data"></i>
               <p>
@@ -57,6 +57,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{ route('DataProductPage') }}" class="nav-link {{ ($tittle === "Data Product") ? 'active' : ''}}"">
@@ -82,12 +83,11 @@
                   <p>Data Suplier</p>
                 </a>
               </li>
-              
             </ul>
-          </li>
-      
+          </li> --}}
 
-          
+
+
           <li class="nav-item bg-danger">
             <a href="{{ route('logout') }}" class="nav-link">
               <i class="bi bi-box-arrow-in-left"></i>
