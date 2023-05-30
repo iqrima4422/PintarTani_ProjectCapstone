@@ -17,7 +17,7 @@
          <div class="navbar-nav ms-auto p-4 p-lg-0">
              <a href="#" class="nav-item nav-link active">Beranda</a>
              <a href="#team" class="nav-item nav-link">Profil</a>
-             <a href="#produkpertanian" class="nav-item nav-link">produk</a>
+             <a href="#produkpertanian" class="nav-item nav-link">Produk</a>
              <a href="#informasi" class="nav-item nav-link">Edukasi</a>
              <a href="#kontak" class="nav-item nav-link">Kontak </a>
          </div>
