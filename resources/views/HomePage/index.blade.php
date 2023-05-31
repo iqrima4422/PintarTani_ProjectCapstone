@@ -114,8 +114,7 @@
                 </video>
             </div>
             <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                <p class="text-primary mb-4">Desa</p>
-                <h1 class="display-1 text-primary mb-0">Tadukan Raga</h1>
+                <h1 class="display-1 text-primary mb-0"> Desa <br> Tadukan Raga</h1>
                 <h1 class="display-5 mb-4">Potensi Besar Di Desa Terpencil</h1>
                 <p class="mb-4">Dengan Luas lahan pertanian <strong>760 Ha</strong> dan lahan persawahan seluas
                     <strong>240 Ha</strong>. Melalui potensi lahan yang tak bisa dianggap sebelah mata membuktikan
@@ -248,7 +247,7 @@
                 <div class="portfolio-inner rounded">
                     <img class="img-fluid" src="img/product/ubi-jalar.jpg" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Ubi Jalar</h4>
+                        <h4 class="text-white mb-4">Ubi Kayu</h4>
                         <div class="d-flex">
                             <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/ubi-jalar.jpg.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
