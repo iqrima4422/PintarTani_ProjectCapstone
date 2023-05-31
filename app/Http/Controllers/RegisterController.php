@@ -12,7 +12,7 @@ class RegisterController extends Controller
     public function index()
     {
         return view('LoginPage.register', [
-            'tittle' => 'Register Page',
+            'title' => 'Register Page',
         ]);
     }
 
