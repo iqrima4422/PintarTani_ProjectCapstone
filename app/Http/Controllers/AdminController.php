@@ -5,13 +5,10 @@ namespace App\Http\Controllers;
 use PDF;
 use Auth;
 use App\Models\User;
-use App\Models\Diskon;
-use App\Models\Payment;
 use App\Models\Product;
 use App\Models\Supplier;
 use App\Models\Transaksi;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
 
