@@ -2,17 +2,6 @@
 @section('content')
 
 <div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-1">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Profile</a></li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
     <div class="container rounded bg-white mt-3 mb-3">
         @if ($errors->any())
         <div class="alert alert-danger">
