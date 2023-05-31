@@ -21,20 +21,20 @@ class AdminController extends Controller
     {
         $dataMember = User::orderBy('level', 'asc')->where('level', 'user')->paginate(2);
         return view('AdminView.index', [
-            'tittle' => 'Home Page Admin',
+            'title' => 'Home Page Admin',
             'dataMember' => $dataMember,
         ]);
     }
     function profile()
     {
-        return view('AdminView.profile', ['tittle' => 'Profile Page']);
+        return view('AdminView.profile', ['title' => 'Profile Page']);
     }
 
     function dataproduct()
     {
         $dataProduct = Product::with('suppliers')->orderBy('id', 'asc')->paginate(5);
         return view('AdminView.dataProduct', [
-            'tittle' => 'Data Product',
+            'title' => 'Data Product',
             'dataProduct' => $dataProduct,
         ]);
     }
@@ -42,7 +42,7 @@ class AdminController extends Controller
 
     function contact()
     {
-        return view('AdminView.contact', ['tittle' => 'Contact Admin']);
+        return view('AdminView.contact', ['title' => 'Contact Admin']);
     }
 
     function datasupplier()
@@ -50,7 +50,7 @@ class AdminController extends Controller
         $dataSupplier = Supplier::all();
         $dataSupplier = Supplier::orderBy('id', 'asc')->paginate(3);
         return view('AdminView.dataSuplier', [
-            'tittle' => 'Data Supplier',
+            'title' => 'Data Supplier',
             'dataSupplier' => $dataSupplier,
         ]);
     }
@@ -59,7 +59,7 @@ class AdminController extends Controller
         $dataPenjualan = Transaksi::all();
         $dataPenjualan = Transaksi::with('products')->orderBy('id', 'asc')->paginate(5);
         return view('AdminView.dataPenjualan', [
-            'tittle' => 'Data Penjualan',
+            'title' => 'Data Penjualan',
             'dataPenjualan' => $dataPenjualan,
         ]);
     }
@@ -68,7 +68,7 @@ class AdminController extends Controller
     {
         $dataPenjualan = Transaksi::find($id);
         return view('AdminView.editDataPenjualan', [
-            'tittle' => 'Edit Data Penjualan',
+            'title' => 'Edit Data Penjualan',
             'dataPenjualan' => $dataPenjualan,
         ]);
     }
@@ -92,7 +92,7 @@ class AdminController extends Controller
         $dataPenjualan = Transaksi::all();
         $dataPenjualan = Transaksi::with('products')->orderBy('id', 'asc')->get();
         $pdf = PDF::loadView('AdminView.cetakDataPenjualan', [
-            'tittle' => 'Data Penjualan',
+            'title' => 'Data Penjualan',
             'dataPenjualan' => $dataPenjualan,
         ]);
         return $pdf->download('Data Penjualan.pdf');
@@ -146,7 +146,7 @@ class AdminController extends Controller
     {
         $user = User::find($id);
         return view('AdminView.editDataUser', [
-            'tittle' => 'Edit Data User',
+            'title' => 'Edit Data User',
             'user' => $user,
         ]);
     }
@@ -202,7 +202,7 @@ class AdminController extends Controller
     public function createUser()
     {
         return view('AdminView.createDataUser', [
-            'tittle' => 'Create Data User'
+            'title' => 'Create Data User'
         ]);
     }
     // fungsi store data user
@@ -244,15 +244,5 @@ class AdminController extends Controller
         $search = $request->search;
         $user = User::where('name', 'like', "%" . $search . "%");
         return view('HomePage.gallery', ['users' => $user]);
-    }
-
-    function datadiskon()
-    {
-        $dataDiskon = Diskon::all();
-        $dataDiskon = Diskon::with('suppliers')->orderBy('id', 'asc')->paginate(5);
-        return view('AdminView.dataDiskon', [
-            'tittle' => 'Data Diskon',
-            'dataDiskon' => $dataDiskon,
-        ]);
     }
 }
