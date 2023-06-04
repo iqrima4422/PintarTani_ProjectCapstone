@@ -17,7 +17,7 @@
          <div class="navbar-nav ms-auto p-4 p-lg-0">
              <a href="{{ route('HomePage') }}" class="nav-item nav-link">Beranda</a>
              <a href="{{ route('ProfilePage') }}" class="nav-item nav-link">Profil</a>
-             <a href="#" class="nav-item nav-link">Produk</a>
+             <a href="{{ route('GalleryPage') }}" class="nav-item nav-link">Produk</a>
              <a href="" class="nav-item nav-link">Edukasi</a>
              <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak </a>
          </div>
