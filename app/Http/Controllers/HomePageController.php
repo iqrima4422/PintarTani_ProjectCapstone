@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Region;
+use App\Models\Transaksi;
+use App\Models\Payment;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
@@ -152,5 +155,84 @@ class HomePageController extends Controller
                 session()->flash('success', 'Product removed successfully');
             }
         }
+    }
+
+    public function checkout()
+    {
+        $region = Region::all();
+        // return dd($region);
+        //get id from cart
+        $cart = session()->get('cart');
+        $total1 = 0;
+        $products = null;
+        $kuantitas = null;
+        if ($cart != null) {
+            $id = array_keys($cart);
+            //get product from id
+            $products = Product::find($id);
+            foreach ($products as $product) {
+                $total1 += $cart[$product->id]['quantity'] * $product->harga;
+            }
+            $kuantitas = array_sum(array_column($cart, 'quantity'));
+        }
+
+        return view('HomePage.checkout', [
+            'title' => 'Checkout Page', 'produk' => $products,
+            'cart' => $cart,
+            'kuantitas' => $kuantitas, 'regions' => $region
+        ]);
+        // produk, kuantitas, cart
+    }
+
+    public function searchProduct(Request $request)
+    {
+        $data = Product::where('product', 'like', '%' . $request->cari . '%')->get();
+        return view('HomePage.search', ['title' => 'Search Page', 'barang' => $data]);
+    }
+
+    public function purchase()
+    {
+        return view('HomePage.purchase', ['title' => 'Purchase Page']);
+    }
+
+    public function postCheckOut(Request $request)
+    {
+        $cart = session()->get('cart');
+
+        if ($cart != null) {
+            foreach ($cart as $item) {
+                $transaksi = new Transaksi();
+                $transaksi->user_id = Auth::user()->id;
+                $transaksi->product_id = $item['id'];
+                $transaksi->region_id = $request->region;
+                $transaksi->qty = $item['quantity'];
+                $transaksi->Tanggal_beli = now()->format('Y-m-d');
+                $transaksi->created_at = now();
+                $transaksi->save();
+
+                $product = Product::find($item['id']);
+                $payment = new Payment();
+                $total1 = $cart[$product->id]['quantity'] * $product->harga;
+                $payment->total_bayar = $total1;
+                $payment->transaksi_id = $transaksi->id;
+                $payment->tanggal_bayar = now();
+                $payment->created_at = now();
+                $payment->save();
+                $product->stok = $product->stok - $cart[$product->id]['quantity'];
+                $product->save();
+            }
+        }
+
+        //destroy session
+        session()->forget('cart');
+        return redirect('/purchase')->with('success', 'Pembayaran berhasil, silahkan cek email anda');
+    }
+
+    public function purchaseHistory()
+    {
+        $transaksi = Transaksi::with('products')->orderBy('created_at', 'desc')->where('user_id', Auth::user()->id)->get();
+        $transaksiid = array_column($transaksi->toArray(), 'id');
+        $payment = Payment::with('transaksi')->whereIn('transaksi_id', $transaksiid)->orderBy('created_at', 'desc')->paginate(5);
+        return view('HomePage.purchaseHistory', ['title' => 'Purchase History Page', 'transaksi' => $transaksi, 'payment' => $payment]);
     }
 }
