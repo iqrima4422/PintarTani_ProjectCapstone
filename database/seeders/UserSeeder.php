@@ -20,12 +20,11 @@ class UserSeeder extends Seeder
                 'email' => 'admin@gmail.com',
                 'password' => bcrypt('admin'),
                 'level' => 'admin',
-                'foto' => 'admin.jpg',
+                'foto' => 'img/admin/admin.jpg',
                 'notelp' => '081234567890',
                 'alamat' => 'Jl. Raya Sukabumi',
                 'created_at' => now(),
             ],
-
         ]);
     }
 }

@@ -17,27 +17,27 @@ class SupplierSeeder extends Seeder
             [
                 'nama' => 'Ade Irawan',
                 'alamat' => 'Dusun I Tungkusan',
-                'telp' => '0812341234',
+                'telp' => '08123412345',
             ],
             [
                 'nama' => 'Sutanto',
                 'alamat' => 'Dusun II',
-                'telp' => '0812341234',
+                'telp' => '08123456789',
             ],
             [
                 'nama' => 'Tugimen',
                 'alamat' => 'Dusun III Sei Basah',
-                'telp' => '0812341234',
+                'telp' => '08987654321',
             ],
             [
                 'nama' => 'Hariyanto',
                 'alamat' => 'Dusun IV Undian',
-                'telp' => '0812341234',
+                'telp' => '08123098456',
             ],
             [
                 'nama' => 'Supratman',
                 'alamat' => 'Dusun V Kampung Dalam',
-                'telp' => '0812341234',
+                'telp' => '08987123654',
             ],
         ]);
     }
