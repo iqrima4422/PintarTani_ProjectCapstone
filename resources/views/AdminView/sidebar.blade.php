@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="height: 100vh">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-        <img src="{{ asset('img/hero/Pintar_Tani_Transparant.png') }}" alt="PintarTani Logo"
+        <img src="{{ asset('adminLTE/dist/img/brandlogo.png') }}" alt="PintarTani Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Pintar Tani</span>
     </a>
