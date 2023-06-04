@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PageFirstController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,14 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::get('/createUser', [AdminController::class, 'createUser'])->name('CreateUser');
     Route::post('/postCreateUser', [AdminController::class, 'storeUser'])->name('PostCreateUser');
     Route::get('/delete/{id}', [AdminController::class, 'destroy'])->name('DeletePengguna');
+
+    Route::get('/dataProduct', [AdminController::class, 'dataproduct'])->name('DataProductPage');
+    Route::get('/createProduct', [ProductController::class, 'createProduct'])->name('CreateProduct');
+    Route::post('/postCreateProduct', [ProductController::class, 'storeProduct'])->name('PostCreateProduct');
+    Route::get('/editProduct/{id}', [ProductController::class, 'editproduct'])->name('EditProduct');
+    Route::post('/updateProduct/{id}', [ProductController::class, 'updateDataProduct'])->name('UpdateProduct');
+    Route::get('/deleteProduct/{id}', [ProductController::class, 'destroyProduct'])->name('DeleteProduct');
+    Route::get('/printProduct', [ProductController::class, 'cetakDataProduct'])->name('CetakDataProduct');
 });
 
 Route::middleware(['auth', 'cekLevel:user'])->group(function () {

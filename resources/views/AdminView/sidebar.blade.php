@@ -44,14 +44,14 @@
                         </p>
                     </a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
           <a href="{{ route('ProfilePageAdmin') }} " class="nav-link {{ ($title === "Profile Page") ? 'active' : ''}}">
           <i class="bi bi-person-badge"></i>
               <p>Profile</p>
             </a>
-          </li> -->
+          </li>
 
-                {{-- <li class="nav-item">
+                <li class="nav-item">
             <a href="#" class="nav-link">
             <i class="bi bi-clipboard2-data"></i>
               <p>
@@ -68,14 +68,7 @@
                 <p>Data Produk</p>
                 </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('DataDiskonPage') }}"
-                        class="nav-link {{ ($title === "Data Diskon") ? 'active' : ''}}"">
-                  <i class=" far fa-circle nav-icon"></i>
-                        <p>Produk Diskon</p>
-                    </a>
-                </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ route('DataPenjualanPage') }}"
                         class="nav-link {{ ($title === "Data Penjualan") ? 'active' : ''}}"">
                   <i class=" far fa-circle nav-icon"></i>
@@ -88,11 +81,9 @@
                   <i class=" far fa-circle nav-icon"></i>
                         <p>Data Suplier</p>
                     </a>
-                </li>
+                </li> --}}
             </ul>
-            </li> --}}
-
-
+            </li>
 
             <li class="nav-item bg-danger">
                 <a href="{{ route('logout') }}" class="nav-link">
