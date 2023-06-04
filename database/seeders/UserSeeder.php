@@ -25,6 +25,16 @@ class UserSeeder extends Seeder
                 'alamat' => 'Jl. Raya Sukabumi',
                 'created_at' => now(),
             ],
+            [
+                'name' => 'Iqrimanise',
+                'email' => 'iqrimannisa@gmail.com',
+                'password' => bcrypt('imacantik'),
+                'level' => 'user',
+                'foto' => 'img/admin/admin.jpg',
+                'notelp' => '081232515427',
+                'alamat' => 'Malang',
+                'created_at' => now(),
+            ],
         ]);
     }
 }

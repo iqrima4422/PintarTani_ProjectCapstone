@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Singkong',
                 'kategori' => 'Sayuran',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 50,
                 'harga' => 3000,
                 'gambar' =>'img/product/pintartani/Singkong.jpg',
@@ -26,7 +26,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Jagung',
                 'kategori' => 'Buah',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 30,
                 'harga' => 5000,
                 'gambar' =>'img/product/pintartani/Jagung.jpg',
@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Pakcoy',
                 'kategori' => 'Sayuran',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 20,
                 'harga' => 17000,
                 'gambar' =>'img/product/pintartani/Pakcoy.jpg',
@@ -44,7 +44,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Serai',
                 'kategori' => 'Bahan Dapur',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 20,
                 'harga' => 13000,
                 'gambar' =>'img/product/pintartani/Serai.jpg',
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Pepaya',
                 'kategori' => 'Buah',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 50,
                 'harga' => 15000,
                 'gambar' =>'img/product/pintartani/Pepaya.jpg',
@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Pupuk Kompos',
                 'kategori' => 'Bahan Tani',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 40,
                 'harga' => 2500,
                 'gambar' =>'img/product/pintartani/Pupuk-kompos.jpg',
@@ -72,7 +72,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Pupuk Kandang',
                 'kategori' => 'Bahan Tani',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 60,
                 'harga' => 4000,
                 'gambar' =>'img/product/pintartani/Pupuk-kandang.jpg',
@@ -81,7 +81,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Bibit Singkong',
                 'kategori' => 'Bahan Tani',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 50,
                 'harga' => 3000,
                 'gambar' =>'img/product/pintartani/Bibit-singkong.jpg',
@@ -90,7 +90,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Cabe Merah',
                 'kategori' => 'Bahan Dapur',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 30,
                 'harga' => 12000,
                 'gambar' =>'img/product/pintartani/Cabemerah.jpg',
@@ -99,7 +99,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Cabe Hijau',
                 'kategori' => 'Bahan Dapur',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 40,
                 'harga' => 17000,
                 'gambar' =>'img/product/pintartani/Cabehijau.jpg',
@@ -108,7 +108,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Cabe Rawit',
                 'kategori' => 'Bahan Dapur',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 30,
                 'harga' => 40000,
                 'gambar' =>'img/product/pintartani/Cabe-rawit.jpg',
@@ -117,7 +117,7 @@ class ProductSeeder extends Seeder
             [
                 'product' => 'Kangkung',
                 'kategori' => 'Sayuran',
-                'merk' => 'Tadukan Raga',
+                'merk' => 'TaduChoice',
                 'stok' => 50,
                 'harga' => 10000,
                 'gambar' =>'img/product/pintartani/Kangkung.jpg',

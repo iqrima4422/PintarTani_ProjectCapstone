@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Storage;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+
 
 class RegisterController extends Controller
 {
