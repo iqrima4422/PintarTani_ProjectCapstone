@@ -64,4 +64,16 @@ Route::middleware(['auth', 'cekLevel:user'])->group(function () {
     Route::get('/addcart/{id}', [HomePageController::class, 'addToCart'])->name('AddCart');
     Route::delete('/removecart', [HomePageController::class, 'remove'])->name('Removecart');
     Route::patch('/updatecart', [HomePageController::class, 'update'])->name('Updatecart');
+
+    Route::get('/searchProduct', [HomePageController::class, 'searchProduct'])->name('SearchProduct');
+    Route::get('/sorting', [HomePageController::class, 'gallerySort'])->name('Sorting');
+
+    Route::post('/postCheckout', [HomePageController::class, 'postCheckOut'])->name('PostCheckout');
+
+    Route::get('/purchase', [HomePageController::class, 'purchaseHistory'])->name('PurchasePage');
+    Route::get('/editDataPurchase/{id}', [PurchaseController::class, 'editDataPurchase'])->name('EditPurchase');
+    Route::post('/postUpdatePurchase/{id}', [PurchaseController::class, 'store'])->name('PostUpdatePurchase');
+    Route::post('/updatePurchas/{id}', [PurchaseController::class, 'updateDataPurchase'])->name('UpdatePurchase');
+    Route::get('/deletePurchase/{id}', [PurchaseController::class, 'destroy'])->name('DeletePurchase');
+    Route::get('/cetakPurchase', [PurchaseController::class, 'cetakPurchase'])->name('CetakPurchaseHistory');
 });
