@@ -42,12 +42,12 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::get('/contactAdmin', [AdminController::class, 'contact'])->name('ContactAdminPage');
     Route::post('/changePassword', [AdminController::class, 'updateDataPassword'])->name('ChangePasswordAdmin');
 
-    Route::get('/edit/{id}', [AdminController::class, 'edit'])->name('EditUser');
-    Route::post('/update/{id}', [AdminController::class, 'updateDataUser'])->name('UpdateUser');
-    Route::get('/printdata', [AdminController::class, 'cetakDataUser'])->name('CetakDataUser');
     Route::get('/createUser', [AdminController::class, 'createUser'])->name('CreateUser');
     Route::post('/postCreateUser', [AdminController::class, 'storeUser'])->name('PostCreateUser');
+    Route::get('/edit/{id}', [AdminController::class, 'edit'])->name('EditUser');
+    Route::post('/update/{id}', [AdminController::class, 'updateDataUser'])->name('UpdateUser');
     Route::get('/delete/{id}', [AdminController::class, 'destroy'])->name('DeletePengguna');
+    Route::get('/printdata', [AdminController::class, 'cetakDataUser'])->name('CetakDataUser');
 
     Route::get('/dataProduct', [AdminController::class, 'dataproduct'])->name('DataProductPage');
     Route::get('/createProduct', [ProductController::class, 'createProduct'])->name('CreateProduct');
@@ -61,28 +61,27 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
 Route::middleware(['auth', 'cekLevel:user'])->group(function () {
     Route::get('/home', [HomePageController::class, 'index'])->name('HomePage');
     Route::get('/profile', [HomePageController::class, 'profile'])->name('ProfilePage');
-    Route::get('/contact', [HomePageController::class, 'contact'])->name('ContactPage');
     Route::post('/postupdateDataUser', [HomePageController::class, 'updateDataUser'])->name('updateDataUser');
     Route::post('postupdateDataPassword', [HomePageController::class, 'updateDataPassword'])->name('gantiPassword');
+    Route::get('/contact', [HomePageController::class, 'contact'])->name('ContactPage');
 
     Route::get('/gallery', [HomePageController::class, 'gallery'])->name('GalleryPage');
     Route::get('/checkout', [HomePageController::class, 'checkout'])->name('CheckoutPage');
+    Route::post('/postCheckout', [HomePageController::class, 'postCheckOut'])->name('PostCheckout');
 
     Route::get('/shopingcart', [HomePageController::class, 'shopingcart'])->name('shopingCart');
     Route::get('/cart', [HomePageController::class, 'cart'])->name('Cart');
     Route::get('/addcart/{id}', [HomePageController::class, 'addToCart'])->name('AddCart');
-    Route::delete('/removecart', [HomePageController::class, 'remove'])->name('Removecart');
     Route::patch('/updatecart', [HomePageController::class, 'update'])->name('Updatecart');
+    Route::delete('/removecart', [HomePageController::class, 'remove'])->name('Removecart');
 
     Route::get('/searchProduct', [HomePageController::class, 'searchProduct'])->name('SearchProduct');
     Route::get('/sorting', [HomePageController::class, 'gallerySort'])->name('Sorting');
 
-    Route::post('/postCheckout', [HomePageController::class, 'postCheckOut'])->name('PostCheckout');
-
     Route::get('/purchase', [HomePageController::class, 'purchaseHistory'])->name('PurchasePage');
     Route::get('/editDataPurchase/{id}', [PurchaseController::class, 'editDataPurchase'])->name('EditPurchase');
-    Route::post('/postUpdatePurchase/{id}', [PurchaseController::class, 'store'])->name('PostUpdatePurchase');
     Route::post('/updatePurchas/{id}', [PurchaseController::class, 'updateDataPurchase'])->name('UpdatePurchase');
+    Route::post('/postUpdatePurchase/{id}', [PurchaseController::class, 'store'])->name('PostUpdatePurchase');
     Route::get('/deletePurchase/{id}', [PurchaseController::class, 'destroy'])->name('DeletePurchase');
     Route::get('/cetakPurchase', [PurchaseController::class, 'cetakPurchase'])->name('CetakPurchaseHistory');
 });
