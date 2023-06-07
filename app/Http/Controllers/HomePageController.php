@@ -178,6 +178,7 @@ class HomePageController extends Controller
 
         return view('HomePage.checkout', [
             'title' => 'Checkout Page', 'produk' => $products,
+            'total' => $total1,
             'cart' => $cart,
             'kuantitas' => $kuantitas, 'regions' => $region
         ]);
