@@ -1,5 +1,6 @@
 @extends('HomePage.layout')
 @section('content')
+
 <!-- Shoping Cart Section Begin -->
 <section class="shoping-cart spad">
     <div class="container">

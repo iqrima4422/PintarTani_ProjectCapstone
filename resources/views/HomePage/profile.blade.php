@@ -64,7 +64,7 @@
                     <br>
 
                     <!-- Large modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                    <button type="button" class="btn btn-warning" data-toggle="modal"
                         data-target=".bd-example-modal-lg">Edit Data</button>
                     <button type="button" class="btn btn-danger" data-toggle="modal"
                         data-target=".bd-changepassword-modal-lg">Change Password</button>
@@ -159,7 +159,7 @@
                                                     value="{{ auth()->user()->alamat }}"></div>
                                         </div>
                                         <div class="mt-4 mb-3 text-center">
-                                            <button class="btn btn-info profile-button" type="submit">Save
+                                            <button class="btn btn-primary profile-button" type="submit">Save
                                                 Profile</button>
                                         </div>
                                     </form>

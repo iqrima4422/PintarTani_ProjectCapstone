@@ -1,23 +1,19 @@
 @extends('HomePage.layout')
 @section('content')
-
-<!-- Content Header (Page header) -->
-<section class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <form action="#" method="GET">
-                    <div class="input-group">
-                        <input type="search" name="cari" class="form-control rounded" id="searchproduct"
-                            placeholder="Cari Barang Disini" aria-label="Search" aria-describedby="search-addon"
-                            value="{{old('cari')}}" />
-                        <button type="submit" class="btn btn-outline-primary ml-2">Cari</button>
-                    </div>
-                </form>
+<!-- Content Search Section Begin-->
+<div class="row mb-2">
+    <div class="col-md-4 mb-2">
+        <form action="{{ route('SearchProduct') }}" method="GET">
+            <div class="input-group">
+                <input type="search" name="cari" class="form-control rounded" id="searchproduct"
+                    placeholder="Cari Barang Disini" aria-label="Search" aria-describedby="search-addon"
+                    value="{{old('cari')}}" />
+                <button type="submit" class="btn btn-outline-primary ml-2">Cari</button>
             </div>
-        </div>
-    </div><!-- /.container-fluid -->
-</section>
+        </form>
+    </div>
+</div>
+
 
 <!-- Main content -->
 <div class="filter__item">
