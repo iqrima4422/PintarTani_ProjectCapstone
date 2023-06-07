@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Storage;
 use App\Models\User;
 use Illuminate\Http\Request;
+use A6digital\Image\DefaultProfileImage;
 
 
 class RegisterController extends Controller
