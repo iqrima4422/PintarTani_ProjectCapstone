@@ -16,6 +16,8 @@
 <!-- Icon Font Stylesheet -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="{{asset('adminLTE/plugins/fontawesome-free/css/all.min.css')}}">
 
 <!-- Libraries Stylesheet -->
 <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">

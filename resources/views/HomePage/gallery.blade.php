@@ -44,7 +44,7 @@
 </div>
 <div class="row">
     @foreach ($galeri as $g)
-    <div class="col-lg-3 col-md-4 col-sm-6 mix dapur mandi instan">
+    <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="featured__item">
             <img class="img-fluid" src="{{'storage/'.$g->gambar}}">
             <div class="featured__item__text">
