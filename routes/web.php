@@ -3,10 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PageFirstController;
-use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,6 +76,8 @@ Route::middleware(['auth', 'cekLevel:user'])->group(function () {
     Route::get('/addcart/{id}', [HomePageController::class, 'addToCart'])->name('AddCart');
     Route::patch('/updatecart', [HomePageController::class, 'update'])->name('Updatecart');
     Route::delete('/removecart', [HomePageController::class, 'remove'])->name('Removecart');
+
+    Route::get('/article', [ArticleController::class, 'index'])->name('ArticlePage');
 
     Route::get('/searchProduct', [HomePageController::class, 'searchProduct'])->name('SearchProduct');
     Route::get('/sorting', [HomePageController::class, 'gallerySort'])->name('Sorting');

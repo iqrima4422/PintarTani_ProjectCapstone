@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    //
+    function index()
+    {
+        return view('HomePage.article', ['title' => 'Article Page']);
+    }
 }
