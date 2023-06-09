@@ -238,84 +238,86 @@
                 <ul class="list-inline rounded mb-5" id="portfolio-flters">
                     <li class="mx-2 active" data-filter="*">All</li>
                     <li class="mx-2" data-filter=".first">Tanaman Umbi</li>
-                    <li class="mx-2" data-filter=".second">Tanaman Biji</li>
+                    <li class="mx-2" data-filter=".second">Sayuran</li>
                 </ul>
             </div>
         </div>
         <div class="row g-4 portfolio-container">
             <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/ubi-jalar.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/singkong2.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Ubi Kayu</h4>
+                        <h4 class="text-white mb-4">Singkong</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/ubi-jalar.jpg.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Singkong2.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/Singkong.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/pakcoy.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Singkong</h4>
+                        <h4 class="text-white mb-4">Pakcoy</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Singkong.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Pakcoy.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/padi.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/kangkung.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Padi</h4>
+                        <h4 class="text-white mb-4">Kangkung</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/padi.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Kangkung.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/jagung.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/cabemerah.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Garden Maintenance</h4>
+                        <h4 class="text-white mb-4">Cabai Merah</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/jagung.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Cabemerah.jpg"
+                                data-lightbox="portfolio">
+                                <i class="fa fa-eye"></i></a>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-5.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/cabehijau.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Green Technology</h4>
+                        <h4 class="text-white mb-4">Cabe Hijau</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-5.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Cabehijau.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img3/service-6.jpg" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/caberawit.png" alt="">
                     <div class="portfolio-text">
-                        <h4 class="text-white mb-4">Urban Gardening</h4>
+                        <h4 class="text-white mb-4">Cabe Rawit</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img3/service-6.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2"
+                                href="img/product/pintartani/Cabe-rawit.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
@@ -342,7 +344,7 @@
                         <h4 class="mb-3">Landscaping</h4>
                         <p class="mb-4">Seni merancang dan mengatur elemen-elemen dalam lingkungan luar, seperti taman,
                             halaman, atau area publik.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
+                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
@@ -357,7 +359,7 @@
                         <p class="mb-4">Menggabungkan pohon atau tanaman kehutanan dengan tanaman pertanian untuk
                             meningkatkan produktivitas, meningkatkan kesuburan tanah, dan menyediakan layanan ekosistem.
                         </p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
+                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
@@ -371,7 +373,7 @@
                         <h4 class="mb-3">Irrigation & Drainage</h4>
                         <p class="mb-4">Menggunakan teknik irigasi yang efisien seperti irigasi tetes atau irigasi
                             berbasis kebutuhan untuk mengurangi penggunaan air yang berlebihan.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
+                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>

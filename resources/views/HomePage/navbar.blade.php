@@ -7,7 +7,7 @@
 
  <!-- Navbar Start -->
  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-     <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+     <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
          <h1 class="m-0">Pintar Tani</h1>
      </a>
      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -21,11 +21,11 @@
              <a href="{{ route('ArticlePage') }}" class="nav-item nav-link">Artikel</a>
              <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak </a>
          </div>
-         <!-- Notifications Dropdown Menu -->
+         <!-- Notifications Dropdown Menu. -->
          <div class="nav-item dropdown">
              <button type="button" class="btn btn-info" data-toggle="dropdown">
-                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Keranjang <span
-                     class="badge badge-pill badge-danger">{{ count((array) session('cart'))}}</span>
+                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Keranjang
+                 <span class="badge badge-pill badge-danger">{{ count((array) session('cart'))}}</span>
              </button>
              <div class="dropdown-menu bg-light m-0">
                  <div class="dropdown-item">
@@ -46,7 +46,8 @@
                  @foreach(session('cart') as $id => $details)
                  <div class="row cart-detail">
                      <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                         <img src="{{'storage/'. $details['gambar'] }}" />
+                         <img src="{{'storage/'. $details['gambar'] }}" width="100" height="100"
+                             class="img-responsive" />
                      </div>
                      <div class="col-lg-6 col-sm-6 col-6 cart-detail-product">
                          <p>{{ $details['product'] }}</p>
@@ -64,8 +65,8 @@
                  </div>
              </div>
          </div>
-         <a href="{{ route('logout') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Keluar<i
-                 class="fa fa-arrow-right ms-3"></i></a>
+         <a href="{{ route('logout') }}" class="nav-item nav-link btn-primary">
+             <i class="fa fa-arrow-right"> Keluar</i></a>
      </div>
  </nav>
  <!-- Navbar End -->

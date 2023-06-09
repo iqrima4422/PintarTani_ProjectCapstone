@@ -206,7 +206,7 @@ h6,
 
 .page-header {
     background: linear-gradient(rgba(15, 66, 41, 0.6), rgba(15, 66, 41, 0.6)),
-        url(../img/carousel-1.jpg) center center no-repeat;
+        url(../img3/happyfood.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -216,6 +216,21 @@ h6,
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--light);
+}
+.page-header2 {
+    background: linear-gradient(rgba(15, 66, 41, 0.6), rgba(15, 66, 41, 0.6)),
+        url(../img3/holtikultura.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header2 .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+.page-header2 .breadcrumb-item,
+.page-header2 .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
 }
