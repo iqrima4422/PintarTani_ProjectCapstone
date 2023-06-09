@@ -24,7 +24,7 @@
                         <th>Total</th>
                         <th>Alamat COD</th>
                         <th>Note</th>
-                        <th>Action</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -43,12 +43,7 @@
                         <td> {{$p->total_bayar}}</td>
                         <td> {{$p->transaksi->region->alamat_cod}}</td>
                         <td> {{$p->transaksi->note}}</td>
-                        <td>
-                            <a href="{{ route('EditPurchase', $p->transaksi->id) }}"
-                                class="btn btn-md btn-warning">Edit</a>
-                            <a href="{{ route('DeletePurchase', $p->transaksi->id) }}" class="btn btn-md btn-danger"
-                                onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
-                        </td>
+
                     </tr>
                     @endforeach
                     {{$payment->links()}}

@@ -3,15 +3,23 @@
 
 
 
-<div class="col-md-4 mb-2">
-    <form action="{{ route('SearchProduct') }}" method="GET">
-        <div class="input-group">
-            <input type="search" name="cari" class="form-control rounded" placeholder="Cari Barang Disini"
-                aria-label="Search" aria-describedby="search-addon" value=" {{old('cari')}}" />
-            <button type="submit" class="btn btn-outline-primary">search</button>
-        </div>
-    </form>
+<div class="row mb-2">
+    <div class="col-md-0 mb-2">
+        <button class="btn btn-primary" onclick="history.back()"><i class="bi bi-arrow-left"></i> </button>
+    </div>
+    <div class="col-md-4 mb-2">
+        <form action="{{ route('SearchProduct') }}" method="GET">
+            <div class="input-group">
+                <input type="search" name="cari" class="form-control rounded" id="searchproduct"
+                    placeholder="Cari Barang Disini" aria-label="Search" aria-describedby="search-addon"
+                    value="{{old('cari')}}" />
+                <button type="submit" class="btn btn-outline-primary ml-2">Cari</button>
+            </div>
+        </form>
+    </div>
 </div>
+
+
 
 <div class="col-lg-12 col-md-13">
     <div class="row">
@@ -27,13 +35,12 @@
                         <h5>{{$g ->harga}}</h5>
                     </div>
                     <p class="btn-holder"><a href=" {{ route('AddCart', $g->id) }}"
-                            class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
+                            class="btn btn-warning btn-block text-center" role="button">Masukkan Keranjang</a> </p>
                 </div>
             </div>
         </div>
         @endforeach
     </div>
-    <button class="btn btn-primary" onclick="history.back()"><i class="bi bi-arrow-return-left"></i> Kembali</button>
 </div>
 
 @endsection
