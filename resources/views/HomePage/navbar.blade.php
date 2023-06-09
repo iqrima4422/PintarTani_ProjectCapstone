@@ -18,6 +18,12 @@
              <a href="{{ route('HomePage') }}" class="nav-item nav-link">Beranda</a>
              <a href="{{ route('ProfilePage') }}" class="nav-item nav-link">Profil</a>
              <a href="{{ route('GalleryPage') }}" class="nav-item nav-link">Produk</a>
+             <div class="nav-item dropdown">
+                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pembelian</a>
+                 <div class="dropdown-menu bg-light m-0">
+                     <a href="{{ route('PurchasePage') }}" class="dropdown-item">Riwayat Pembelian</a>
+                 </div>
+             </div>
              <a href="{{ route('ArticlePage') }}" class="nav-item nav-link">Artikel</a>
              <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak </a>
          </div>
@@ -45,13 +51,12 @@
                  @if(session('cart'))
                  @foreach(session('cart') as $id => $details)
                  <div class="row cart-detail">
-                     <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                         <img src="{{'storage/'. $details['gambar'] }}" width="100" height="100"
-                             class="img-responsive" />
+                     <div class="col-lg-4 col-sm-4 col-4">
+                         <img src="{{'storage/'. $details['gambar'] }}" width="100" height="100" />
                      </div>
                      <div class="col-lg-6 col-sm-6 col-6 cart-detail-product">
                          <p>{{ $details['product'] }}</p>
-                         <span class="price text-info"> ${{ $details['harga'] }}</span> <br>
+                         <span class="price text-info"> Rp. {{ $details['harga'] }}</span> <br>
                          <span class="count"> Quantity:{{ $details['quantity'] }}</span>
                      </div>
                  </div>

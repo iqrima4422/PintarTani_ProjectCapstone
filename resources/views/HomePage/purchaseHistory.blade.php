@@ -1,0 +1,73 @@
+@extends('HomePage.layout')
+@section('content')
+
+<div class="container-xl">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>Laporan Transaksi Saya</h2>
+                    </div>
+                    <div class="col-sm-7">
+                        <a href="/gallery" class="btn btn-secondary"><i class="material-icons">&#xE147;</i>
+                            <span>Belanja Lagi</span></a>
+                        <a href="{{ route('CetakPurchaseHistory') }}" class="btn btn-secondary"><i
+                                class="material-icons">&#xE24D;</i> <span>Export to PDF</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Kode Transaksi</th>
+                        <th>Nama Barang</th>
+                        <th>Harga Satuan</th>
+                        <th>Quantity</th>
+                        <th>Tanggal Beli</th>
+                        <th>Total</th>
+                        <th>Alamat COD</th>
+                        <th>Note</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($payment as $p)
+                    <tr>
+                        <td> {{$p->transaksi->id}}</td>
+                        @if($p->transaksi->products != null)
+                        <td> {{$p->transaksi->products->product}}</td>
+                        <td> {{$p->transaksi->products->harga}}</td>
+                        @elseif($p->transaksi->diskon != null)
+                        <td> {{$p->transaksi->diskon->product}}</td>
+                        <td> {{$p->transaksi->diskon->harga}}</td>
+                        @endif
+                        <td> {{$p->transaksi->qty}}</td>
+                        <td> {{$p->transaksi->Tanggal_beli}}</td>
+                        <td> {{$p->total_bayar}}</td>
+                        <td> {{$p->transaksi->region->alamat_cod}}</td>
+                        <td> {{$p->transaksi->note}}</td>
+                        <td>
+                            <a href="{{ route('EditPurchase', $p->transaksi->id) }}"
+                                class="btn btn-md btn-warning">Edit</a>
+                            <a href="{{ route('DeletePurchase', $p->transaksi->id) }}" class="btn btn-md btn-danger"
+                                onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
+                        </td>
+                    </tr>
+                    @endforeach
+                    {{$payment->links()}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+@endsection
