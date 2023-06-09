@@ -16,7 +16,6 @@
      <div class="collapse navbar-collapse" id="navbarCollapse">
          <div class="navbar-nav ms-auto p-4 p-lg-0">
              <a href="{{ route('HomePage') }}" class="nav-item nav-link">Beranda</a>
-             <a href="{{ route('ProfilePage') }}" class="nav-item nav-link">Profil</a>
              <a href="{{ route('GalleryPage') }}" class="nav-item nav-link">Produk</a>
              <div class="nav-item dropdown">
                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pembelian</a>
@@ -26,6 +25,13 @@
              </div>
              <a href="{{ route('ArticlePage') }}" class="nav-item nav-link">Artikel</a>
              <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak </a>
+             <div class="nav-item dropdown">
+                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akun</a>
+                 <div class="dropdown-menu bg-light m-0">
+                     <a href="{{ route('ProfilePage') }}" class="dropdown-item">Profile</a>
+                     <a href="{{ route('logout') }}" class="dropdown-item">Logout</a>
+                 </div>
+             </div>
          </div>
          <!-- Notifications Dropdown Menu. -->
          <div class="nav-item dropdown">
@@ -70,8 +76,6 @@
                  </div>
              </div>
          </div>
-         <a href="{{ route('logout') }}" class="nav-item nav-link btn-primary">
-             <i class="fa fa-arrow-right"> Keluar</i></a>
      </div>
  </nav>
  <!-- Navbar End -->
