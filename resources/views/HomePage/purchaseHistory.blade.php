@@ -10,10 +10,6 @@
                         <h2>Laporan Transaksi Saya</h2>
                     </div>
                     <div class="col-sm-7">
-                        <a href="/gallery" class="btn btn-secondary"><i class="material-icons">&#xE147;</i>
-                            <span>Belanja Lagi</span></a>
-                        <a href="{{ route('CetakPurchaseHistory') }}" class="btn btn-secondary"><i
-                                class="material-icons">&#xE24D;</i> <span>Export to PDF</span></a>
                     </div>
                 </div>
             </div>

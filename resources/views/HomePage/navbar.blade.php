@@ -32,50 +32,51 @@
                      <a href="{{ route('logout') }}" class="dropdown-item">Logout</a>
                  </div>
              </div>
-         </div>
-         <!-- Notifications Dropdown Menu. -->
-         <div class="nav-item dropdown">
-             <button type="button" class="btn btn-info" data-toggle="dropdown">
-                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Keranjang
-                 <span class="badge badge-pill badge-danger">{{ count((array) session('cart'))}}</span>
-             </button>
-             <div class="dropdown-menu bg-light m-0">
-                 <div class="dropdown-item">
-                     <div class="col-lg-6 col-sm-6 col-6">
-                         <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span
-                             class="badge badge-pill badge-danger">{{ count((array) session('cart'))}}</span>
+             <div class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> Keranjang
+                 </a>
+                 <div class="dropdown-menu bg-light m-0">
+                     <div class="dropdown-item">
+                         <div class="col-lg-6 col-sm-6 col-6">
+                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                             <span class="badge badge-pill badge-danger bg-dark">
+                                {{ count((array) session('cart'))}} Produk
+                             </span>
+                         </div>
+                         @php $total1 = 0 @endphp
+                         @foreach((array) session('cart') as $id => $details)
+                         @php $total1 += $details['harga'] * $details['quantity'] @endphp
+                         @endforeach
+
+                         <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                             <p>Total: <span class="">Rp. {{ $total1 }}</span></p>
+                         </div>
                      </div>
-                     @php $total1 = 0 @endphp
-                     @foreach((array) session('cart') as $id => $details)
-                     @php $total1 += $details['harga'] * $details['quantity'] @endphp
+                     @if(session('cart'))
+                     @foreach(session('cart') as $id => $details)
+                     <div class="row cart-detail">
+                         <div class="col-lg-4 col-sm-4 col-4">
+                             <img src="{{'storage/'. $details['gambar'] }}" width="65" height="65" />
+                         </div>
+                         <div class="col-lg-6 col-sm-6 col-6 cart-detail-product">
+                             <p>{{ $details['product'] }}</p>
+                             <span class="price "> Rp. {{ $details['harga'] }}</span> <br>
+                             <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+                         </div>
+                     </div>
                      @endforeach
+                     @endif
 
-                     <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
-                         <p>Total: <span class="text-info">Rp. {{ $total1 }}</span></p>
+                     <div class="row">
+                         <!-- <div class="text-center checkout"> -->
+                         <a href="{{ route('Cart') }}" class="btn btn-primary btn-block">Tampilkan semua</a>
+                         <!-- </div> -->
                      </div>
-                 </div>
-                 @if(session('cart'))
-                 @foreach(session('cart') as $id => $details)
-                 <div class="row cart-detail">
-                     <div class="col-lg-4 col-sm-4 col-4">
-                         <img src="{{'storage/'. $details['gambar'] }}" width="100" height="100" />
-                     </div>
-                     <div class="col-lg-6 col-sm-6 col-6 cart-detail-product">
-                         <p>{{ $details['product'] }}</p>
-                         <span class="price text-info"> Rp. {{ $details['harga'] }}</span> <br>
-                         <span class="count"> Quantity:{{ $details['quantity'] }}</span>
-                     </div>
-                 </div>
-                 @endforeach
-                 @endif
-
-                 <div class="row">
-                     <!-- <div class="text-center checkout"> -->
-                     <a href="{{ route('Cart') }}" class="btn btn-primary btn-block">Tampilkan semua</a>
-                     <!-- </div> -->
                  </div>
              </div>
          </div>
+         <!-- Notifications Dropdown Menu. -->
      </div>
  </nav>
  <!-- Navbar End -->
