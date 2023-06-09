@@ -16,9 +16,10 @@
      <div class="collapse navbar-collapse" id="navbarCollapse">
          <div class="navbar-nav ms-auto p-4 p-lg-0">
              <a href="#" class="nav-item nav-link active">Beranda</a>
-             <a href="#team" class="nav-item nav-link">Profil</a>
-             <a href="#produkpertanian" class="nav-item nav-link">Produk</a>
+             <a href="#tentang" class="nav-item nav-link">Tentang</a>
+             <a href="#produk" class="nav-item nav-link">Produk</a>
              <a href="#informasi" class="nav-item nav-link">Artikel</a>
+             <a href="#team" class="nav-item nav-link">Tim</a>
              <a href="#kontak" class="nav-item nav-link">Kontak </a>
          </div>
          <a href="{{ route('LoginPage') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Masuk<i
