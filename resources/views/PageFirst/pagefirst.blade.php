@@ -73,7 +73,7 @@
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
                     <div class="d-flex">
                         <div class="ps-3">
-                            <h4>Green Economy</h4>
+                            <h4>Ekonomi Ramah Lingkungan</h4>
                             <span>Ekonomi berkelanjutan dan penurunan risiko kerusakan lingkungan</span>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
                     <div class="d-flex">
                         <div class="ps-3">
-                            <h4>Collaborative Governance</h4>
+                            <h4>Tata Kelola Kolaboratif</h4>
                             <span>Edukasi teknik pertanian yang ramah lingkungan dan berkelanjutan</span>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                 <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
                     <div class="d-flex">
                         <div class="ps-3">
-                            <h4>Scalable Business</h4>
+                            <h4>Potensi Bisnis Tinggi</h4>
                             <span>Model bisnis yang memungkinkan tumbuh berkembang secara eksponensial</span>
                         </div>
                     </div>
