@@ -27,32 +27,31 @@
             </div>
         </form>
     </div>
-</div>
-
-
-<!-- Main content -->
-<div class="filter__item">
-    <div class="row">
-        <div class="col-lg-4 col-md-5">
-            <div class="filter__sort">
-                <form action="{{ route('Sorting') }}" method="get">
-                    <span>Sortir berdasarkan</span>
-                    <select name="sorting" class="form-control">
-                        <!-- <option value="id">Id</option> -->
+    <div class="col-lg-4 col-md-5">
+        <div class="filter__sort">
+            <form action="{{ route('Sorting') }}" method="get">
+                <div class="input-group">
+                    <span class="input-group-text">Sortir berdasarkan</span>
+                    <select name="sorting" class="form-select">
                         <option value="product">Nama Produk</option>
                         <option value="kategori">Kategori</option>
                     </select>
-                    <button type="submit" class="site-btn">Sortir</button>
-                </form>
-            </div>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-primary">Sortir</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="col-lg-4 col-md-4">
-            <div class="filter__found">
-                <h6><span>{{$total}}</span> Produk ditemukan </h6>
-            </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4">
+        <div class="filter__found">
+            <h6><span>{{$total}}</span> Produk ditemukan </h6>
         </div>
     </div>
 </div>
+
+<!-- Main content -->
 <div class="row">
     @foreach ($galeri as $g)
     <div class="col-lg-3 col-md-4 col-sm-6">

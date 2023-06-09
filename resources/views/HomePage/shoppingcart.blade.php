@@ -43,7 +43,7 @@
                                         Rp.{{ $details['harga'] * $details['quantity'] }}</td>
                                     <td class="actions" data-th="">
                                         <button class="btn btn-danger btn-sm remove-from-cart"><i
-                                                class="fa fa-trash-o"></i></button>
+                                                class="bi bi-trash"></i></button>
                                     </td>
 
                             </tr>
