@@ -55,13 +55,14 @@
                     <label for="kategori">Kategori</label>
                     <select class="custom-select mr-sm-2  @error('kategori') is-invalid @enderror" name="kategori">
                         <option value="Bahan Dapur">Bahan Dapur</option>
-                        <option value="Perlengkapan Mandi">Perlengkapan Mandi</option>
-                        <option value="Makanan Instan">Makanan Instan</option>
+                        <option value="Sayuran">Sayuran</option>
+                        <option value="Buah">Buah</option>
+                        <option value="Bahan Tani">Bahan Tani</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="merk">Merk</label>
-                    <input type="text" name="merk" class="form-control @error('merk') is-invalid @enderror" placeholder="Merk" required >
+                    <input type="text" name="merk" class="form-control @error('merk') is-invalid @enderror" value="TaduChoice" readonly >
                     @error('merk')
                     <div class="invalid-feedback">
                         {{ $message }}
