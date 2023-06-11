@@ -58,6 +58,20 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::post('/updateProduct/{id}', [ProductController::class, 'updateDataProduct'])->name('UpdateProduct');
     Route::get('/deleteProduct/{id}', [ProductController::class, 'destroyProduct'])->name('DeleteProduct');
     Route::get('/printProduct', [ProductController::class, 'cetakDataProduct'])->name('CetakDataProduct');
+
+    Route::get('/createSupplier', [SuplierController::class, 'create'])->name('CreateSupplier');
+    Route::post('/postCreateSupplier', [SuplierController::class, 'store'])->name('PostCreateSupplier');
+    Route::post('/postUpdateSupplier/{id}', [SuplierController::class, 'postUpdateSuplier'])->name('PostUpdateSupplier');
+    Route::get('/editSupplier/{id}', [SuplierController::class, 'edit'])->name('EditSupplier');
+    Route::post('/updateSupplier/{id}', [SuplierController::class, 'updateDataSupplier'])->name('UpdateSupplier');
+    Route::get('/deleteSupplier/{id}', [SuplierController::class, 'destroy'])->name('DeleteSupplier');
+    Route::get('/printSupplier', [SuplierController::class, 'cetakDataSupplier'])->name('CetakDataSupplier');
+
+    Route::get('/dataPenjualan', [AdminController::class, 'datapenjualan'])->name('DataPenjualanPage');
+    Route::get('/editDataPenjualan/{id}', [AdminController::class, 'editDataPenjualan'])->name('editDataPenjualan');
+    Route::post('/updateDataPenjualan/{id}', [AdminController::class, 'updateDataPenjualan'])->name('updateDataPenjualan');
+    Route::get('/deleteDataPenjualan/{id}', [AdminController::class, 'deleteDataPenjualan'])->name('deleteDataPenjualan');
+    Route::get('/cetakDataPenjualan', [AdminController::class, 'cetakDataPenjualan'])->name('cetakDataPenjualan');
 });
 
 Route::middleware(['auth', 'cekLevel:user'])->group(function () {
