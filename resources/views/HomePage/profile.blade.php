@@ -128,18 +128,21 @@
                                         enctype="multipart/form-data">
                                         @csrf
                                         <div class="d-flex flex-column align-items-center" style="text-transform: none">
-                                            <img id="preview-image-before-upload" class="rounded-circle mt-5"
-                                                width="150px" src="{{ asset('storage/'.auth()->user()->foto) }}"
-                                                alt="Profile Image">
+                                            <div class="rounded-circle overflow-hidden mt-5"
+                                                style="width: 150px; height: 150px;">
+                                                <img id="preview-image-before-upload" class="w-100 h-100"
+                                                    src="{{ asset('storage/'.auth()->user()->foto) }}"
+                                                    alt="Profile Image">
+                                            </div>
                                         </div>
+
                                         <div class="row mt-2">
                                             <div class="col-md-12">
                                                 <label for="image" class="form-label">Upload Profile Photo</label>
                                                 <div class="custom-file">
                                                     <input id="image" type="file" class="custom-file-input"
                                                         id="inputGroupFile02" name="foto" accept="image/*">
-                                                    <label class="custom-file-label" for="inputGroupFile02">Choose
-                                                        file</label>
+                                                    <label class="custom-file-label" for="inputGroupFile02"></label>
                                                 </div>
                                             </div>
                                         </div>
