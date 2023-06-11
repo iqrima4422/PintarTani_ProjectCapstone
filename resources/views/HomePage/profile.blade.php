@@ -101,7 +101,9 @@
                                                 aria-describedby="Password Konfirmasi"
                                                 placeholder="Enter confirm password" name="password_confirmation">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <div class="mt-4 mb-3 text-center">
+                                            <button class="btn btn-primary profile-button" type="submit">Submit</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -115,20 +117,24 @@
                         aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="col-md-12" style="text-align: left">
-                                    <div class="p-3 py-5">
-                                        <h4 class="text-center">Edit Profile</h4>
-                                    </div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
                                     <form action="{{ route('updateDataUser') }}" method="post"
                                         enctype="multipart/form-data">
                                         @csrf
                                         <div class="d-flex flex-column align-items-center" style="text-transform: none">
                                             <img id="preview-image-before-upload" class="rounded-circle mt-5"
-                                                width="150px" src="{{ asset('storage/'.auth()->user()->foto) }}">
+                                                width="150px" src="{{ asset('storage/'.auth()->user()->foto) }}"
+                                                alt="Profile Image">
                                         </div>
                                         <div class="row mt-2">
                                             <div class="col-md-12">
-                                                <label for="formFile" class="form-label">upload photo profile</label>
+                                                <label for="image" class="form-label">Upload Profile Photo</label>
                                                 <div class="custom-file">
                                                     <input id="image" type="file" class="custom-file-input"
                                                         id="inputGroupFile02" name="foto" accept="image/*">
@@ -138,25 +144,32 @@
                                             </div>
                                         </div>
                                         <div class="row mt-2">
-                                            <div class="col-md-12"><label class="labels">Username</label><input
-                                                    type="text" class="form-control" name="name" placeholder=" username"
-                                                    value="{{ auth()->user()->name }}"></div>
-                                        </div>
-                                        <div class="row mt-2">
-                                            <div class="col-md-12"><label class="labels">Email</label><input type="text"
-                                                    class="form-control" name="email" placeholder=" Email"
-                                                    value="{{ auth()->user()->email }}"></div>
-                                        </div>
-                                        <div class="row mt-2">
-                                            <div class="col-md-12"><label class="labels">Nomor Telepon</label><input
-                                                    type="text" class="form-control" name="notelp"
-                                                    placeholder=" Nomor Telepon" value="{{ auth()->user()->notelp }}">
+                                            <div class="col-md-12">
+                                                <label for="name" class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                    placeholder="Username" value="{{ auth()->user()->name }}">
                                             </div>
                                         </div>
                                         <div class="row mt-2">
-                                            <div class="col-md-12"><label class="labels">Alamat</label><input
-                                                    type="text" class="form-control" name="alamat" placeholder=" Alamat"
-                                                    value="{{ auth()->user()->alamat }}"></div>
+                                            <div class="col-md-12">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="text" class="form-control" id="email" name="email"
+                                                    placeholder="Email" value="{{ auth()->user()->email }}">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-md-12">
+                                                <label for="notelp" class="form-label">Nomor Telepon</label>
+                                                <input type="text" class="form-control" id="notelp" name="notelp"
+                                                    placeholder="Nomor Telepon" value="{{ auth()->user()->notelp }}">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-md-12">
+                                                <label for="alamat" class="form-label">Alamat</label>
+                                                <input type="text" class="form-control" id="alamat" name="alamat"
+                                                    placeholder="Alamat" value="{{ auth()->user()->alamat }}">
+                                            </div>
                                         </div>
                                         <div class="mt-4 mb-3 text-center">
                                             <button class="btn btn-primary profile-button" type="submit">Save
@@ -167,6 +180,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

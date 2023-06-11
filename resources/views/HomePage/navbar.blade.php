@@ -41,7 +41,7 @@
                          <div class="col-lg-6 col-sm-6 col-6">
                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                              <span class="badge badge-pill badge-danger bg-dark">
-                                {{ count((array) session('cart'))}} Produk
+                                 {{ count((array) session('cart'))}} Produk
                              </span>
                          </div>
                          @php $total1 = 0 @endphp
@@ -68,7 +68,7 @@
                      @endforeach
                      @endif
 
-                     <div class="row">
+                     <div class="">
                          <!-- <div class="text-center checkout"> -->
                          <a href="{{ route('Cart') }}" class="btn btn-primary btn-block">Tampilkan semua</a>
                          <!-- </div> -->
