@@ -15,30 +15,23 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="checkout__input">
-                                    <p> Nama Pembeli<span>*</span></p>
-                                    <input type="text" name="nama" placeholder="Nama Pembeli"
-                                        value="{{auth()->user()->name}}">
+                                    <label for="nama">Nama Pembeli<span>*</span></label>
+                                    <input type="text" name="nama" class="form-control" placeholder="Nama Pembeli"
+                                        value="{{ auth()->user()->name }}" readonly>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <div class="col-12">
-                                <div class="checkout__input">
-                                    <p>Alamat Pembeli<span>*</span></p>
-                                    <input type="text" name="alamat" placeholder="Alamat" value="{{auth()->user()->alamat}}">
-                                </div>
-                            </div>
-                        </div> -->
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="region" class="mb-0">Alamat Pengiriman Barang
                                         (COD)<span>*</span></label>
-                                    <p class="mb-3 text-danger" style="font-size: 14px; font-style:italic;">Pilih alamat
-                                        terdekat dari lokasi anda dan Pastikan Anda berada di wilayah Probolinggo karena
-                                        kami hanya melayani pengiriman melalui COD di wilayah Probolinggo</p>
-                                    <select name="region" class="">
+                                    <p class="mb-3 text-danger" style="font-size: 13px; font-style: italic;">Pilih
+                                        alamat terdekat dari lokasi Anda dan Pastikan Anda berada di wilayah Tadukan
+                                        Raga, karena kami hanya melayani pengiriman melalui COD di wilayah Kec. Sinembah
+                                        Tj. Muda Hilir
+                                    </p>
+                                    <select name="region" class="form-control">
                                         @foreach ($regions as $region)
                                         <option value="{{ $region->id }}">{{ $region->alamat_cod }}</option>
                                         @endforeach
@@ -46,32 +39,30 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row mt-3">
                             <div class="col-lg-6">
                                 <div class="checkout__input">
-                                    <p>Telepon<span>*</span></p>
-                                    <input type="text" name="telepon" placeholder="Telepon"
-                                        value="{{auth()->user()->notelp}}">
-                                    <p class="mb-3 text-danger" style="font-size: 14px; font-style:italic;">Pastikan
-                                        nomer yang anda masukkan terdaftar aktif sebagai nomor WA</p>
+                                    <label for="telepon">Telepon<span>*</span></label>
+                                    <input type="text" name="telepon" class="form-control" placeholder="Telepon"
+                                        value="{{ auth()->user()->notelp }}" readonly>
+                                    <p class="mb-3 text-danger" style="font-size: 13px; font-style:italic;">Pastikan
+                                        nomor yang Anda masukkan terdaftar aktif sebagai nomor WA</p>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="checkout__input">
-                                    <p>Email<span>*</span></p>
-                                    <input type="text" name="email" placeholder="Email"
-                                        value="{{auth()->user()->email}}">
+                                    <label for="email">Email<span>*</span></label>
+                                    <input type="text" name="email" class="form-control" placeholder="Email"
+                                        value="{{ auth()->user()->email }}" readonly>
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="checkout__input">
-                                    <p>Order notes<span></span></p>
-                                    <input type="text" name="notes" placeholder="Order Notes">
+                                    <label for="notes">Order notes</label>
+                                    <input type="text" name="notes" class="form-control" placeholder="Order Notes">
                                 </div>
                             </div>
                         </div>
@@ -99,7 +90,7 @@
                                     tunai</b> saat COD</p>
 
                             <button type="submit" class="site-btn">Pesan Sekarang</button>
-                            <p class="mt-3" style="color: black;font-size:14px;">Konfimasi Pengiriman Barang akan
+                            <p class="mt-3" style="color: black;font-size:13px;">Konfimasi Pengiriman Barang akan
                                 dilakukan 1 x 24 jam setelah anda berhasil melakukan pemesanan. Kami akan mengirimkan
                                 pesan melalui WA.</p>
 
