@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SuplierController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\RegisterController;
