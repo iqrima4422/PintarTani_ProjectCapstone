@@ -81,6 +81,13 @@
                   <i class=" far fa-circle nav-icon"></i>
                         <p>Data Suplier</p>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('DataArticlePage') }}"
+                        class="nav-link {{ ($title === "Data Article") ? 'active' : ''}}"">
+                  <i class=" far fa-circle nav-icon"></i>
+                        <p>Data Article</p>
+                    </a>
                 </li> --}}
             </ul>
             </li>
