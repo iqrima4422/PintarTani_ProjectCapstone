@@ -15,4 +15,10 @@ class ArticleController extends Controller
         $article = Article::all();
         return view('HomePage.article', ['articles' => $article], ['title' => 'Article Page']);
     }
+
+    function detail($id)
+    {
+        $article = Article::find($id);
+        return view('HomePage.detail-article', ['article' => $article], ['title' => 'Detail Article']);
+    }
 }

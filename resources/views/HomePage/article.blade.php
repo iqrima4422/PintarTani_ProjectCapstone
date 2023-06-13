@@ -36,7 +36,8 @@ use Illuminate\Support\Str;
                         </div>
                         <h4 class="mb-3">{{$art ->judul}}</h4>
                         <p class="mb-4">{{Str::limit($art->deskripsi, 150)}}</p>
-                        <a class="btn btn-sm" href="#"><i class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
+                        <a class="btn btn-sm" href="{{route('DetailArticle', $art->id)}}"><i
+                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
             </div>

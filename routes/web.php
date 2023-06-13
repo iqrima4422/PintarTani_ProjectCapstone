@@ -93,6 +93,7 @@ Route::middleware(['auth', 'cekLevel:user'])->group(function () {
     Route::delete('/removecart', [HomePageController::class, 'remove'])->name('Removecart');
 
     Route::get('/article', [ArticleController::class, 'index'])->name('ArticlePage');
+    Route::get('/detail-article/{id}', [ArticleController::class, 'detail'])->name('DetailArticle');
 
     Route::get('/searchProduct', [HomePageController::class, 'searchProduct'])->name('SearchProduct');
     Route::get('/sorting', [HomePageController::class, 'gallerySort'])->name('Sorting');
