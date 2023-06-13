@@ -27,3 +27,4 @@
 
 <!-- Template Stylesheet -->
 <link href="{{asset('css3/style.css')}}" rel="stylesheet">
+@laravelPWA

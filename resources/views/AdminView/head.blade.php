@@ -11,3 +11,4 @@
 <link rel="stylesheet" href="{{ asset('adminLTE/dist/css/adminlte.min.css') }}">
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@laravelPWA
