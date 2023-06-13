@@ -23,35 +23,6 @@
             <h1 class="display-5 mb-5">Layanan Edukasi</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-3.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Landscaping</h4>
-                        <p class="mb-4">Seni merancang dan mengatur elemen-elemen dalam lingkungan luar, seperti taman,
-                            halaman, atau area publik.</p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-6.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Agroforestri</h4>
-                        <p class="mb-4">Menggabungkan pohon atau tanaman kehutanan dengan tanaman pertanian untuk
-                            meningkatkan produktivitas, meningkatkan kesuburan tanah, dan menyediakan layanan ekosistem.
-                        </p>
-                        <a class="btn btn-sm" href="{{ route('LoginPage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded d-flex h-100">
                     <div class="service-text rounded p-5">
