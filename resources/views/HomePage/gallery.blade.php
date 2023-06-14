@@ -56,7 +56,9 @@
     @foreach ($galeri as $g)
     <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="featured__item">
-            <img class="img-fluid" src="{{'storage/'.$g->gambar}}">
+            <div class="d-flex justify-content-center">
+                <img class="img-fluid" src="{{'storage/'.$g->gambar}}">
+            </div>
             <div class="featured__item__text">
                 <div class="product__discount__item__text">
                     <span>{{$g ->kategori}}</span>
