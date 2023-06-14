@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Region;
+use App\Models\Article;
 use App\Models\Transaksi;
 use App\Models\Payment;
 use Illuminate\Http\Request;
@@ -15,9 +16,8 @@ class HomePageController extends Controller
     function index()
     {
         $data = Product::all();
-        return view('HomePage.index', ['barang' => $data], [
-            'title' => 'Home Page',
-        ]);
+        $article = Article::all();
+        return view('HomePage.index', ['barang' => $data, 'articles' => $article], ['title' => 'Home Page',]);
     }
 
     function profile()
