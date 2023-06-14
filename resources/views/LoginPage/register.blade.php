@@ -85,7 +85,12 @@
                     </div>
                 </form>
 
-                <a href="{{ route('LoginPage') }}" class="text-center">Login</a>
+                <div class="social-auth-links text-center mb-3">
+                    <p class="mb-0">
+                        <a href="{{ route('LoginPage') }}" class="text-center">Login</a>
+                    </p>
+                </div>
+
             </div>
             <!-- /.form-box -->
         </div><!-- /.card -->
