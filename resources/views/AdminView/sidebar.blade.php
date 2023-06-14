@@ -31,13 +31,13 @@
         </div>
 
         <!-- Sidebar Menu -->
-        <nav class="mt-2">
+        <nav class="mt-2" id="sidebar-menu">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="{{ route('HomePageAdmin') }} "
-                        class="nav-link {{ ($title === "Home Page Admin") ? 'active' : ''}}">
+                        id="data-pengguna" class="nav-link {{ ($title === "Home Page Admin") ? 'active' : ''}}">
                         <i class="bi bi-people-fill"></i>
                         <p>
                             Data Pengguna
@@ -45,14 +45,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
-          <a href="{{ route('ProfilePageAdmin') }} " class="nav-link {{ ($title === "Profile Page") ? 'active' : ''}}">
+          <a href="{{ route('ProfilePageAdmin') }} " id="profile" class="nav-link {{ ($title === "Profile Page") ? 'active' : ''}}">
           <i class="bi bi-person-badge"></i>
               <p>Profile</p>
             </a>
           </li>
 
                 <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" id="database-toko" class="nav-link">
             <i class="bi bi-clipboard2-data"></i>
               <p>
               Database Toko
@@ -61,7 +61,7 @@
             </a>
 
             <ul class="nav nav-treeview">
-              <li class="nav-item">
+              <li id="data-product" class="nav-item">
                 <a href="{{ route('DataProductPage') }}" class="nav-link
                 {{ ($title === "Data Product") ? 'active' : ''}}"">
                 <i class="far fa-circle nav-icon"></i>
