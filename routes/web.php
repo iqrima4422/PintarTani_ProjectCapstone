@@ -60,6 +60,7 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::get('/deleteProduct/{id}', [ProductController::class, 'destroyProduct'])->name('DeleteProduct');
     Route::get('/printProduct', [ProductController::class, 'cetakDataProduct'])->name('CetakDataProduct');
 
+    Route::get('/dataSupplier', [AdminController::class, 'datasupplier'])->name('DataSupplierPage');
     Route::get('/createSupplier', [SuplierController::class, 'create'])->name('CreateSupplier');
     Route::post('/postCreateSupplier', [SuplierController::class, 'store'])->name('PostCreateSupplier');
     Route::post('/postUpdateSupplier/{id}', [SuplierController::class, 'postUpdateSuplier'])->name('PostUpdateSupplier');
@@ -73,6 +74,13 @@ Route::middleware(['auth', 'cekLevel:admin'])->group(function () {
     Route::post('/updateDataPenjualan/{id}', [AdminController::class, 'updateDataPenjualan'])->name('updateDataPenjualan');
     Route::get('/deleteDataPenjualan/{id}', [AdminController::class, 'deleteDataPenjualan'])->name('deleteDataPenjualan');
     Route::get('/cetakDataPenjualan', [AdminController::class, 'cetakDataPenjualan'])->name('cetakDataPenjualan');
+
+    Route::get('/dataArticle', [AdminController::class, 'dataArticle'])->name('DataArticlePage');
+    Route::get('/createArticle', [ArticleController::class, 'createArticle'])->name('CreateArticle');
+    Route::post('/postCreateArticle', [ArticleController::class, 'storeArticle'])->name('PostCreateArticle');
+    Route::get('/editArticle/{id}', [ArticleController::class, 'editArticle'])->name('EditArticle');
+    Route::post('/updateArticle/{id}', [ArticleController::class, 'updateDataArticle'])->name('UpdateArticle');
+    Route::get('/deleteArticle/{id}', [ArticleController::class, 'destroyArticle'])->name('DeleteArticle');
 });
 
 Route::middleware(['auth', 'cekLevel:user'])->group(function () {

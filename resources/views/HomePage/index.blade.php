@@ -13,7 +13,7 @@
                                 <h1 class="display-1 text-white mb-5 animated slideInDown">Berkolaborasi Dengan
                                     Pemerintahan Desa
                                 </h1>
-                                <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
+                                <a href="{{ route('GalleryPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
                                     Lebih Lanjut</a>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                             <div class="col-lg-7">
                                 <h1 class="display-1 text-white mb-5 animated slideInDown">Hasil Panen Yang Berkualitas
                                 </h1>
-                                <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
+                                <a href="{{ route('GalleryPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
                                     Lebih Lanjut</a>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                             <div class="col-lg-7">
                                 <h1 class="display-1 text-white mb-5 animated slideInDown">Kerjasama Nyata Dengan
                                     Masyarakat Dan Pemuda Desa</h1>
-                                <a href="{{ route('LoginPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
+                                <a href="{{ route('GalleryPage') }}" class="btn btn-primary py-sm-3 px-sm-4">Telusuri
                                     Lebih Lanjut</a>
                             </div>
                         </div>
@@ -121,7 +121,8 @@
                     adanya potensi aspek sosial dan ekonomi yang berguna untuk meningkatkan kesejahteraan serta
                     mengatasi ketimpangan sosial masyarakat di Desa Tadukan Raga.
                 </p>
-                <a class="btn btn-primary py-3 px-4" href="{{ route('LoginPage') }}">Telusuri Lebih Lanjut</a>
+                <a class="btn btn-primary py-3 px-4"
+                    href="https://pmd.deliserdangkab.go.id/kecamatan-stm-hilir.html">Telusuri Lebih Lanjut</a>
             </div>
             <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="row g-5">
@@ -148,7 +149,7 @@
 
 
 <!-- Facts Start -->
-<div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img3/carousel-1.jpg">
+<div class="container-fluid facts my-5 py-5" data-parallax="scroll">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
@@ -178,11 +179,12 @@
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="fs-5 fw-bold text-primary">Kenapa pilih kami !</p>
+                <p class="fs-5 fw-bold text-primary">Percayakan ke Kami !</p>
                 <h1 class="display-5 mb-4">Beberapa Alasan Yang Menguatkan</h1>
                 <p class="mb-4">Membeli produk pertanian dari desa mendukung perekonomian lokal, memberikan kehidupan
                     berkelanjutan bagi petani, serta menyediakan makanan segar dan berkualitas.</p>
-                <a class="btn btn-primary py-3 px-4" href="{{ route('LoginPage') }}">Telusuri Lebih Lanjut</a>
+                <a class="btn btn-primary py-3 px-4"
+                    href="https://pmd.deliserdangkab.go.id/kecamatan-stm-hilir.html">Telusuri Lebih Lanjut</a>
             </div>
             <div class="col-lg-6">
                 <div class="row g-4 align-items-center">
@@ -245,11 +247,11 @@
         <div class="row g-4 portfolio-container">
             <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/singkong2.png" alt="">
+                    <img class="img-fluid" src="img/product/pintartani/singkong2.2.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Singkong</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Singkong2.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/singkong2.png"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -262,7 +264,7 @@
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Pakcoy</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Pakcoy.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Pakcoy2.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -275,7 +277,7 @@
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Kangkung</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Kangkung.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Kangkung2.png"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -302,8 +304,9 @@
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Cabe Hijau</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Cabehijau.jpg"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2"
+                                href="img/product/pintartani/Cabehijau(2).png" data-lightbox="portfolio"><i
+                                    class="fa fa-eye"></i></a>
 
                         </div>
                     </div>
@@ -315,10 +318,9 @@
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Cabe Rawit</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2"
-                                href="img/product/pintartani/Cabe-rawit.jpg" data-lightbox="portfolio"><i
-                                    class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Rawit.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -335,49 +337,21 @@
             <h1 class="display-5 mb-5">Layanan Edukasi</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-3.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Landscaping</h4>
-                        <p class="mb-4">Seni merancang dan mengatur elemen-elemen dalam lingkungan luar, seperti taman,
-                            halaman, atau area publik.</p>
-                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded d-flex h-100">
-                    <div class="service-text rounded p-5">
-                        <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="img3/icon/icon-6.png" alt="Icon">
-                        </div>
-                        <h4 class="mb-3">Agroforestri</h4>
-                        <p class="mb-4">Menggabungkan pohon atau tanaman kehutanan dengan tanaman pertanian untuk
-                            meningkatkan produktivitas, meningkatkan kesuburan tanah, dan menyediakan layanan ekosistem.
-                        </p>
-                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
-                                class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
-                    </div>
-                </div>
-            </div>
+            @foreach ($articles as $art)
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded d-flex h-100">
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
                             <img class="img-fluid" src="img3/icon/icon-5.png" alt="Icon">
                         </div>
-                        <h4 class="mb-3">Irrigation & Drainage</h4>
-                        <p class="mb-4">Menggunakan teknik irigasi yang efisien seperti irigasi tetes atau irigasi
-                            berbasis kebutuhan untuk mengurangi penggunaan air yang berlebihan.</p>
-                        <a class="btn btn-sm" href="{{ route('ArticlePage') }}"><i
+                        <h4 class="mb-3">{{$art ->judul}}</h4>
+                        <p class="mb-4">{{Str::limit($art->deskripsi, 150)}}</p>
+                        <a class="btn btn-sm" href="{{route('DetailArticle', $art->id)}}"><i
                                 class="fa fa-plus text-primary me-2"></i>Lanjut Baca</a>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>

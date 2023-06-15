@@ -24,9 +24,9 @@
                     <div class="d-flex flex-column align-items-center" style="text-transform: none">
                         <img id="preview-image-before-upload" class="rounded-circle mt-5" width="150px">
                     </div>
-                    <label for="article">Gambar Article</label>
-                    <input type="file" id="image" class="form-control @error('article') is-invalid @enderror" name="article" accept="image/*">
-                    @error('article')
+                    <label for="gambar">Gambar Article</label>
+                    <input type="file" id="image" class="form-control @error('gambar') is-invalid @enderror" name="gambar" accept="image/*">
+                    @error('gambar')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
@@ -40,6 +40,24 @@
                         {{ $message }}
                     </div>
                 @enderror
+                </div>
+                <div class="form-group">
+                    <label for="penulis">Penulis</label>
+                    <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" placeholder="penulis" required >
+                    @error('penulis')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <label for="tahun">Tahun</label>
+                    <input type="text" name="tahun" class="form-control @error('tahun') is-invalid @enderror" placeholder="tahun" required >
+                    @error('tahun')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
                 <div class="form-group">
                     <label for="deskripsi">Deskripsi</label>
