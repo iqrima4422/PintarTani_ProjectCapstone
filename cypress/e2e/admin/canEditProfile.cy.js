@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Profile Setting', () => {
+describe('canEditProfile', () => {
     it('Admin Can Login', () => {
         cy.visit("http://127.0.0.1:8000/login");
         cy.get(':nth-child(2) > .form-control').type("admin@gmail.com");
