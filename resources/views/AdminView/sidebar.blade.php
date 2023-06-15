@@ -68,7 +68,7 @@
                 <p>Data Produk</p>
                 </a>
                 </li>
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a href="{{ route('DataPenjualanPage') }}"
                         class="nav-link {{ ($title === "Data Penjualan") ? 'active' : ''}}"">
                   <i class=" far fa-circle nav-icon"></i>
@@ -82,13 +82,13 @@
                         <p>Data Suplier</p>
                     </a>
                 </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a href="{{ route('DataArticlePage') }}"
                         class="nav-link {{ ($title === "Data Article") ? 'active' : ''}}"">
                   <i class=" far fa-circle nav-icon"></i>
                         <p>Data Article</p>
                     </a>
-                </li> --}}
+                </li>
             </ul>
             </li>
 

@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Product;
 use App\Models\Supplier;
 use App\Models\Transaksi;
+use App\Models\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
@@ -51,6 +52,17 @@ class AdminController extends Controller
             'dataSupplier' => $dataSupplier,
         ]);
     }
+
+    function dataArticle()
+    {
+        $dataArticle = Article::all();
+        $dataArticle = Article::orderBy('id', 'asc')->paginate(3);
+        return view('AdminView.dataArticle', [
+            'title' => 'Data Article',
+            'dataArticle' => $dataArticle,
+        ]);
+    }
+
     function datapenjualan()
     {
         $dataPenjualan = Transaksi::all();

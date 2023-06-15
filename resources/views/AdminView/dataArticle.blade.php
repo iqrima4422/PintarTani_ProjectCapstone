@@ -194,22 +194,26 @@ $(document).ready(function(){
                     <tr>
                         <th>ID</th>
                         <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
                         <th>Deskripsi</th>						
                         <th>Gambar</th>
                         <th>Action</th>
                     </tr>
                 </thead>
-                @foreach ($dataArticle as $dp)
+                @foreach ($dataArticle as $da)
                 <tbody>
                     <tr>
-                        <td>{{ $dp->id}}</td>
-                        <td>{{ $dp->judul}}</td>
-                        <td>{{ $dp->deskripsi}}</td>
-                        <td><img src="{{ asset( 'storage/'.$dp->article) }}" width="100px" height="100px"></td>
+                        <td>{{ $da->id}}</td>
+                        <td>{{ $da->judul}}</td>
+                        <td>{{ $da->penulis}}</td>
+                        <td>{{ $da->tahun}}</td>
+                        <td>{{ $da->deskripsi}}</td>
+                        <td><img src="{{ asset( 'storage/'.$da->gambar) }}" width="100px" height="100px"></td>
                         <td>
                            
-                        <a href="{{ route('EditArticle', $dp->id) }}" class="btn btn-md btn-warning">Edit</a>
-                        <a href="{{ route('DeleteArticle', $dp->id) }}" class="btn btn-md btn-danger" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
+                        <a href="{{ route('EditArticle', $da->id) }}" class="btn btn-md btn-warning">Edit</a>
+                        <a href="{{ route('DeleteArticle', $da->id) }}" class="btn btn-md btn-danger" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
                         </td>
                     </tr>
                 </tbody>
