@@ -93,7 +93,7 @@
             </li>
 
             <li class="nav-item bg-danger">
-                <a href="{{ route('logout') }}" class="nav-link">
+                <a href="{{ route('logout') }}" id="logout" class="nav-link">
                     <i class="bi bi-box-arrow-in-left"></i>
                     <p>Logout</p>
                 </a>

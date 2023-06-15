@@ -68,7 +68,7 @@
                      @endforeach
                      @endif
 
-                     <div class="">
+                     <div class="cart">
                          <!-- <div class="text-center checkout"> -->
                          <a href="{{ route('Cart') }}" class="btn btn-primary btn-block">Tampilkan semua</a>
                          <!-- </div> -->
