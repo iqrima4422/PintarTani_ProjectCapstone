@@ -2,11 +2,11 @@
 @section('content')
 
 <!-- Detail Article Start -->
-<div class="container py-5" id="detail-artikel">
+<div class="container py-5" id="detail-artikel" wow fadeIn" data-wow-delay="0.1s">
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card">
-                <img class="card-img-top" src="{{$article->gambar}}" alt="Gambar Artikel">
+                <img class="card-img-top" src="{{ asset('storage/'.$article->gambar) }}" alt="Gambar Artikel">
                 <div class="card-body">
                     <h2 class="card-title text-center">{{$article->judul}}</h2>
                     <p class="card-text"><strong>Penulis:</strong> {{$article->penulis}}</p>

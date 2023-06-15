@@ -79,6 +79,7 @@ class ArticleController extends Controller
         } else {
             $article = Article::find($id);
             $article->judul = $request->judul;
+            $article->gambar = $request->gambar;
             $article->penulis = $request->penulis;
             $article->tahun = $request->tahun;
             $article->deskripsi = $request->deskripsi;
