@@ -69,6 +69,7 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
             </div>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akun</a>
@@ -82,3 +83,17 @@
     </div>
 </nav>
 <!-- Navbar End -->
+=======
+                     <div class="cart">
+                         <!-- <div class="text-center checkout"> -->
+                         <a href="{{ route('Cart') }}" class="btn btn-primary btn-block">Tampilkan semua</a>
+                         <!-- </div> -->
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- Notifications Dropdown Menu. -->
+     </div>
+ </nav>
+ <!-- Navbar End -->
+>>>>>>> 67b5b16c78b1a7269ced3f71f57576d297cfccfa
