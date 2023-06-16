@@ -244,13 +244,8 @@
                         <tr>
                             <td>{{ $dp->id}}</td>
                             <td>{{ $dp->users->name}}</td>
-                            @if($dp->products != null)
                             <td>{{ $dp->products->product}}</td>
                             <td>{{ $dp->products->harga}}</td>
-                            @elseif($dp->diskon != null)
-                            <td>{{ $dp->diskon->product}}</td>
-                            <td>{{ $dp->diskon->harga}}</td>
-                            @endif
                             <td>{{ $dp->qty}}</td>
                             <td>{{ $dp->created_at}}</td>
                             <td>
