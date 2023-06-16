@@ -11,7 +11,7 @@
                     <h2 class="card-title text-center">{{$article->judul}}</h2>
                     <p class="card-text"><strong>Penulis:</strong> {{$article->penulis}}</p>
                     <p class="card-text"><strong>Tahun:</strong> {{$article->tahun}}</p>
-                    <p class="card-text text-justify">{{$article->deskripsi}}</p>
+                    <p class="card-text text-justify">{!! nl2br($article->deskripsi) !!}</p>
                     <a href="{{ route('ArticlePage') }}" class="btn btn-primary">Kembali ke Daftar Artikel</a>
                 </div>
             </div>
