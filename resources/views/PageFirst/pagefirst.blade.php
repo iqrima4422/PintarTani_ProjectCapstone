@@ -246,11 +246,11 @@
         <div class="row g-4 portfolio-container">
             <div class="col-lg-3 col-md-4 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/singkong2.2.png" alt="">
+                    <img class="img-fluid" src="img/product/singkong.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Singkong</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/singkong2.png"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Singkong.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -259,11 +259,11 @@
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/pakcoy.png" alt="">
+                    <img class="img-fluid" src="img/product/pakcoy.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Pakcoy</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Pakcoy2.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Pakcoy.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -272,11 +272,11 @@
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/kangkung.png" alt="">
+                    <img class="img-fluid" src="img/product/kangkung.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Kangkung</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Kangkung2.png"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Kangkung.png"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
@@ -285,11 +285,11 @@
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/cabemerah.png" alt="">
+                    <img class="img-fluid" src="img/product/cabemerah.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Cabai Merah</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Cabemerah.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Cabemerah.jpg"
                                 data-lightbox="portfolio">
                                 <i class="fa fa-eye"></i></a>
 
@@ -299,13 +299,12 @@
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/cabehijau.png" alt="">
+                    <img class="img-fluid" src="img/product/cabehijau.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Cabe Hijau</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2"
-                                href="img/product/pintartani/Cabehijau(2).png" data-lightbox="portfolio"><i
-                                    class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Cabehijau.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
                     </div>
@@ -313,11 +312,11 @@
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                 <div class="portfolio-inner rounded">
-                    <img class="img-fluid" src="img/product/pintartani/caberawit.png" alt="">
+                    <img class="img-fluid" src="img/product/caberawit.png" alt="">
                     <div class="portfolio-text">
                         <h4 class="text-white mb-4">Cabe Rawit</h4>
                         <div class="d-flex">
-                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/pintartani/Rawit.jpg"
+                            <a class="btn btn-lg-square rounded-circle mx-2" href="img/product/Caberawit.jpg"
                                 data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
 
                         </div>
