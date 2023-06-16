@@ -8,10 +8,6 @@
             <a href="{{ route('HomePageAdmin') }} " class="nav-link {{ ($title === "Home Page Admin") ? 'active' : ''}}"
                 class="nav-link">Home</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ route('ContactAdminPage') }} "
-                class="nav-link {{ ($title === "Contact Admin") ? 'active' : ''}}" class="nav-link">Contact</a>
-        </li>
     </ul>
 
     <!-- Right navbar links -->

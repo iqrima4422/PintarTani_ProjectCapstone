@@ -37,12 +37,6 @@ class AdminController extends Controller
         ]);
     }
 
-
-    function contact()
-    {
-        return view('AdminView.contact', ['title' => 'Contact Admin']);
-    }
-
     function datasupplier()
     {
         $dataSupplier = Supplier::all();

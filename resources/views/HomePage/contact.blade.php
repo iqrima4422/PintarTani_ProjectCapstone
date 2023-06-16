@@ -58,7 +58,7 @@
     <!-- <div class="position-relative rounded overflow-hidden h-100"> -->
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63720.30721648649!2d98.71892752115617!3d3.466271156035849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031394e3bdb1389%3A0x3f574ee55e74602c!2sTandukan%20Raga%2C%20Kec.%20Sinembah%20Tj.%20Muda%20Hilir%2C%20Kabupaten%20Deli%20Serdang%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1685510419131!5m2!1sid!2sid"
-        width="1515" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade" tabindex="0"></iframe>
 </div>
 
