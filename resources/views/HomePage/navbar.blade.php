@@ -18,14 +18,6 @@
             <a href="{{ route('HomePage') }}" class="nav-item nav-link">Beranda</a>
             <a href="{{ route('GalleryPage') }}" class="nav-item nav-link">Produk</a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pembelian</a>
-                <div class="dropdown-menu bg-light m-0">
-                    <a href="{{ route('PurchasePage') }}" class="dropdown-item">Riwayat Pembelian</a>
-                </div>
-            </div>
-            <a href="{{ route('ArticlePage') }}" class="nav-item nav-link">Artikel</a>
-            <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak</a>
-            <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> Keranjang
                 </a>
@@ -70,12 +62,20 @@
                 </div>
             </div>
             <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pembelian</a>
+                <div class="dropdown-menu bg-light m-0">
+                    <a href="{{ route('PurchasePage') }}" class="dropdown-item">Riwayat Pembelian</a>
+                </div>
+            </div>
+            <a href="{{ route('ArticlePage') }}" class="nav-item nav-link">Artikel</a>
+            <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akun</a>
                 <div class="dropdown-menu bg-light m-0">
                     <a href="{{ route('ProfilePage') }}" class="dropdown-item">Profile</a>
                     <a href="{{ route('logout') }}" class="dropdown-item">Logout</a>
                 </div>
             </div>
+            <a href="{{ route('ContactPage') }}" class="nav-item nav-link">Kontak</a>
         </div>
         <!-- Notifications Dropdown Menu. -->
     </div>
