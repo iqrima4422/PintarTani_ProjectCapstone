@@ -218,7 +218,7 @@ $(document).ready(function(){
                         <td><span class="status text-success">&bull;</span> Tersedia</td>
                         <td>
                            
-                        <a href="{{ route('EditProduct', $dp->id) }}" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                        <a href="{{ route('EditProduct', $dp->id) }}" class="settings" title="Edit" data-toggle="tooltip"><i class="bi bi-pencil-fill"></i></a>
                         <a href="{{ route('DeleteProduct', $dp->id) }}" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');"><i class="material-icons">&#xE5C9;</i></a>
                         </td>
                     </tr>
