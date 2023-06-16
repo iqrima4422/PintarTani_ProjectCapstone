@@ -16,9 +16,6 @@
 <!-- Icon Font Stylesheet -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="{{asset('adminLTE/plugins/fontawesome-free/css/all.min.css')}}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <!-- Libraries Stylesheet -->
 <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
@@ -29,5 +26,6 @@
 <link href="{{asset('css3/bootstrap.min.css')}}" rel="stylesheet">
 
 <!-- Template Stylesheet -->
+
 <link href="{{asset('css3/style.css')}}" rel="stylesheet">
 @laravelPWA

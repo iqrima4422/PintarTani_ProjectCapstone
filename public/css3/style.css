@@ -13,6 +13,13 @@
     bottom: 30px;
     z-index: 99;
 }
+p {
+    font-size: 16px;
+}
+
+span {
+    font-size: 16px;
+}
 
 h1,
 .h1,
@@ -345,6 +352,7 @@ h6,
     cursor: pointer;
     transition: 0.5s;
     border-bottom: 2px solid transparent;
+    font-size: 16px;
 }
 
 #portfolio-flters li:hover,
@@ -1093,7 +1101,13 @@ h6,
 .checkout__input p {
     color: #1c1c1c;
     margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.checkout__input label {
     font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 700;
 }
 
 .checkout__input p span {
@@ -1124,7 +1138,7 @@ h6,
 
 .checkout__input__checkbox label {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     color: #1c1c1c;
     padding-left: 40px;
     cursor: pointer;

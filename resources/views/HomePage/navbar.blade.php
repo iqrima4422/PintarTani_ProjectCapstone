@@ -57,7 +57,7 @@
                     @endforeach
                     @endif
                     <div class="dropdown-item bg-primary btn-block">
-                        <a href="{{ route('Cart') }}" class="btn btn-primary">Tampilkan semua</a>
+                        <a href="{{ route('Cart') }}" class="btn-link btn-primary">Tampilkan semua</a>
                     </div>
                 </div>
             </div>

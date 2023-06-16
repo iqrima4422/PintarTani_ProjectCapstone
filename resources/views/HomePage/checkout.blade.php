@@ -23,10 +23,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <div class="form-group">
+                                <div class="checkout__input">
                                     <label for="region" class="mb-0">Alamat Pengiriman Barang
                                         (COD)<span>*</span></label>
-                                    <p class="mb-3 text-danger" style="font-size: 13px; font-style: italic;">Pilih
+                                    <p class="mb-3 text-danger" style="font-size: 14px; font-style: italic;">Pilih
                                         alamat terdekat dari lokasi Anda dan Pastikan Anda berada di wilayah Tadukan
                                         Raga, karena kami hanya melayani pengiriman melalui COD di wilayah Kec. Sinembah
                                         Tj. Muda Hilir
@@ -45,7 +45,7 @@
                                     <label for="telepon">Telepon<span>*</span></label>
                                     <input type="text" name="telepon" class="form-control" placeholder="Telepon"
                                         value="{{ auth()->user()->notelp }}" readonly>
-                                    <p class="mb-3 text-danger" style="font-size: 13px; font-style:italic;">Pastikan
+                                    <p class="mb-3 text-danger" style="font-size: 14px; font-style: italic;">Pastikan
                                         nomor yang Anda masukkan terdaftar aktif sebagai nomor WA</p>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                     tunai</b> saat COD</p>
 
                             <button type="submit" class="site-btn">Pesan Sekarang</button>
-                            <p class="mt-3" style="color: black;font-size:13px;">Konfimasi Pengiriman Barang akan
+                            <p class="mt-3">Konfimasi Pengiriman Barang akan
                                 dilakukan 1 x 24 jam setelah anda berhasil melakukan pemesanan. Kami akan mengirimkan
                                 pesan melalui WA.</p>
 

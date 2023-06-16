@@ -181,7 +181,8 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="fs-5 fw-bold text-primary">Percayakan ke Kami !</p>
                 <h1 class="display-5 mb-4">Beberapa Alasan Yang Menguatkan</h1>
-                <p class="mb-4">Membeli produk pertanian dari desa mendukung perekonomian lokal, memberikan kehidupan
+                <p class="mb-4">Membeli produk pertanian dari desa mendukung perekonomian
+                    lokal, memberikan kehidupan
                     berkelanjutan bagi petani, serta menyediakan makanan segar dan berkualitas.</p>
                 <a class="btn btn-primary py-3 px-4"
                     href="https://pmd.deliserdangkab.go.id/kecamatan-stm-hilir.html">Telusuri Lebih Lanjut</a>
