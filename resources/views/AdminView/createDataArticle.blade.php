@@ -60,8 +60,8 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi</label>
-                    <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" placeholder="Deskripsi" required >
+                    <label for="deskripsi">Deskripsi</label><br>
+                    <textarea name="deskripsi" class="form-describ @error('deskripsi') is-invalid @enderror" placeholder="Deskripsi" required></textarea>
                     @error('deskripsi')
                     <div class="invalid-feedback">
                         {{ $message }}

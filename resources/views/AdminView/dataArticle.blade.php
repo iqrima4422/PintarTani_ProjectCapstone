@@ -212,8 +212,8 @@ $(document).ready(function(){
                         <td><img src="{{ asset( 'storage/'.$da->gambar) }}" width="100px" height="100px"></td>
                         <td>
                            
-                        <a href="{{ route('EditArticle', $da->id) }}" class="btn btn-md btn-warning">Edit</a>
-                        <a href="{{ route('DeleteArticle', $da->id) }}" class="btn btn-md btn-danger" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
+                        <a href="{{ route('EditArticle', $da->id) }}" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                        <a href="{{ route('DeleteArticle', $da->id) }}" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');"><i class="material-icons">&#xE5C9;</i></a>
                         </td>
                     </tr>
                 </tbody>

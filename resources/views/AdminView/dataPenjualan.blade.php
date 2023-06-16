@@ -254,7 +254,7 @@
                             <td>{{ $dp->qty}}</td>
                             <td>{{ $dp->created_at}}</td>
                             <td>
-                                <a href="{{ route('deleteDataPenjualan', $dp->id) }}" class="btn btn-md btn-danger" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');">Delete</a>
+                                <a href="{{ route('deleteDataPenjualan', $dp->id) }}" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>
                         @endforeach
