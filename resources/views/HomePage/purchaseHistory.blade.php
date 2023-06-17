@@ -19,10 +19,11 @@
                         <th>Nama Barang</th>
                         <th>Harga Satuan</th>
                         <th>Quantity</th>
-                        <th>Tanggal Beli</th>
                         <th>Total</th>
                         <th>Alamat COD</th>
                         <th>Note</th>
+                        <th>Tanggal Beli</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,10 +33,11 @@
                         <td>{{$p->transaksi->products->product}}</td>
                         <td>{{$p->transaksi->products->harga}}</td>
                         <td>{{$p->transaksi->qty}}</td>
-                        <td>{{$p->transaksi->Tanggal_beli}}</td>
                         <td>{{$p->total_bayar}}</td>
                         <td>{{$p->transaksi->region->alamat_cod}}</td>
                         <td>{{$p->transaksi->note}}</td>
+                        <td>{{$p->transaksi->Tanggal_beli}}</td>
+                        <td>{{$p->transaksi->status}}</td>
                     </tr>
                     @endforeach
                 </tbody>
