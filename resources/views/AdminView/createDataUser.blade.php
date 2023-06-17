@@ -3,7 +3,7 @@
 <div class="container mt-4">
     <div class="container" style="text-transform: capitalize">
         <div class="row">
-            <div class="col-md-12 mt-3">
+            <div class="col-md-12 mt-3 text-center">
                 <h3>Form Tambah Data User</h3>
             </div>
             <div class="card-body" style="margin-bottom: 145px;">
