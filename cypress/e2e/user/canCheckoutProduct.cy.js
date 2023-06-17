@@ -6,6 +6,7 @@ describe('canCheckoutProduct', () => {
         cy.get(':nth-child(2) > .form-control').type("user@gmail.com");
         cy.get(':nth-child(3) > .form-control').type("12345678");
         cy.get('.btn').click();
+        cy.wait(2000);
     })
     it('User Can Add Product to Cart', () => {
         cy.visit("http://127.0.0.1:8000/login");
@@ -17,6 +18,7 @@ describe('canCheckoutProduct', () => {
         cy.get('.breadcrumb > :nth-child(1) > a').should("have.text", "Beranda");
         cy.get('.active').should("have.text", "Produk");
         cy.get(':nth-child(2) > .featured__item > .featured__item__text > .btn-holder > .btn').click();
+        cy.wait(2000);
     })
     it('User Can Remove Produk from Cart', () => {
         cy.visit("http://127.0.0.1:8000/login");
@@ -30,6 +32,7 @@ describe('canCheckoutProduct', () => {
         cy.get(':nth-child(2) > .featured__item > .featured__item__text > .btn-holder > .btn').click();
         cy.visit("http://127.0.0.1:8000/cart");
         cy.get('.actions > .btn').click();
+        cy.wait(2000);
     })
     it('User Can Checkout a Product', () => {
         cy.visit("http://127.0.0.1:8000/login");

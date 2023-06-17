@@ -6,6 +6,7 @@ describe('canEditProfile', () => {
         cy.get(':nth-child(2) > .form-control').type("admin@gmail.com");
         cy.get(':nth-child(3) > .form-control').type("admin");
         cy.get('.btn').click();
+        cy.wait(2000);
     })
     it('Admin Can See and Edit data on Profile Page', () => {
         cy.visit("http://127.0.0.1:8000/login");
@@ -26,5 +27,6 @@ describe('canEditProfile', () => {
         cy.get(':nth-child(6) > .col-md-12 > .form-control').clear().type("081234567899");
         cy.get(':nth-child(7) > .col-md-12 > .form-control').clear().type("Tadukan Raga");
         cy.get('.mt-4 > .btn').click();
+        cy.wait(2000);
     })
 })
