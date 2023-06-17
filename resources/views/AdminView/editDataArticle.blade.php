@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <label for="penulis">Penulis</label>
-                    <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" placeholder="penulis" required >
+                    <input type="text" name="penulis" class="form-control @error('penulis') is-invalid @enderror" value="{{ old( 'judul', $article->penulis) }}" required >
                     @error('penulis')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group">
                     <label for="tahun">Tahun</label>
-                    <input type="text" name="tahun" class="form-control @error('tahun') is-invalid @enderror" placeholder="tahun" required >
+                    <input type="text" name="tahun" class="form-control @error('tahun') is-invalid @enderror" value="{{ old( 'judul', $article->tahun) }}" required >
                     @error('tahun')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -65,24 +65,24 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
-        
+
     $(document).ready(function (e) {
-    
+
     $('#image').change(function(){
-                
+
         let reader = new FileReader();
-    
-        reader.onload = (e) => { 
-    
-        $('#preview-image-before-upload').attr('src', e.target.result); 
+
+        reader.onload = (e) => {
+
+        $('#preview-image-before-upload').attr('src', e.target.result);
         }
-    
-        reader.readAsDataURL(this.files[0]); 
-    
+
+        reader.readAsDataURL(this.files[0]);
+
     });
-    
+
     });
-    
+
 </script>
 
 @endsection
