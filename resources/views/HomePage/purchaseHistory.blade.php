@@ -1,16 +1,15 @@
 @extends('HomePage.layout')
 @section('content')
 
-<div class="container-xl">
-    <div class="table-responsive">
-        <div class="table-wrapper">
+<div class="container-xxl py-5" id="informasi">
+    <div class="container">
+        <div class="table-responsive">
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Laporan Transaksi Saya</h2>
+                        <h1>Laporan Transaksi</h1>
                     </div>
-                    <div class="col-sm-7">
-                    </div>
+                    <div class="col-sm-7"></div>
                 </div>
             </div>
             <table class="table table-striped table-hover">
@@ -24,33 +23,29 @@
                         <th>Total</th>
                         <th>Alamat COD</th>
                         <th>Note</th>
-
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($payment as $p)
                     <tr>
-                        <td> {{$p->transaksi->id}}</td>
-                        @if($p->transaksi->products != null)
-                        <td> {{$p->transaksi->products->product}}</td>
-                        <td> {{$p->transaksi->products->harga}}</td>
-                        @elseif($p->transaksi->diskon != null)
-                        <td> {{$p->transaksi->diskon->product}}</td>
-                        <td> {{$p->transaksi->diskon->harga}}</td>
-                        @endif
-                        <td> {{$p->transaksi->qty}}</td>
-                        <td> {{$p->transaksi->Tanggal_beli}}</td>
-                        <td> {{$p->total_bayar}}</td>
-                        <td> {{$p->transaksi->region->alamat_cod}}</td>
-                        <td> {{$p->transaksi->note}}</td>
-
+                        <td>{{$p->transaksi->id}}</td>
+                        <td>{{$p->transaksi->products->product}}</td>
+                        <td>{{$p->transaksi->products->harga}}</td>
+                        <td>{{$p->transaksi->qty}}</td>
+                        <td>{{$p->transaksi->Tanggal_beli}}</td>
+                        <td>{{$p->total_bayar}}</td>
+                        <td>{{$p->transaksi->region->alamat_cod}}</td>
+                        <td>{{$p->transaksi->note}}</td>
                     </tr>
                     @endforeach
-                    {{$payment->links()}}
                 </tbody>
             </table>
+            <div class="pagination justify-content-center">
+                {{$payment->links()}}
+            </div>
         </div>
     </div>
 </div>
+
 
 @endsection

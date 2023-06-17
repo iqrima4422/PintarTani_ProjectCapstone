@@ -61,11 +61,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="checkout__input">
-                                    <label for="notes">Order notes</label>
-                                    <input type="text" name="notes" class="form-control" placeholder="Order Notes">
+                                    <label for="note">Order notes</label>
+                                    <textarea name="note" class="form-control" placeholder="Order Notes"></textarea>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="checkout__order">

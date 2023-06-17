@@ -50,7 +50,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item menu-open">
                     <a href="#" id="database-toko" class="nav-link">
                         <i class="bi bi-clipboard2-data"></i>
                         <p>
@@ -90,6 +90,7 @@
                         </li>
                     </ul>
                 </li>
+
 
                 <li class="nav-item bg-danger">
                     <a href="{{ route('logout') }}" id="logout" class="nav-link">
