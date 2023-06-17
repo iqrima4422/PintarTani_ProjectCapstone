@@ -18,6 +18,7 @@ class CreateTransaksiTable extends Migration
             $table->integer('qty');
             $table->date('Tanggal_beli');
             $table->string('note')->nullable();
+            $table->enum('status', ['Pending', 'Process', 'Done'])->default('Pending');
             $table->timestamps();
         });
     }
