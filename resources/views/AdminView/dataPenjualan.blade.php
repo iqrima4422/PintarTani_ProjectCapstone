@@ -236,6 +236,7 @@
                             <th>Harga Satuan</th>
                             <th>Quantity</th>
                             <th>Tanggal Transaksi</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -248,7 +249,9 @@
                             <td>{{ $dp->products->harga}}</td>
                             <td>{{ $dp->qty}}</td>
                             <td>{{ $dp->created_at}}</td>
+                            <td>{{ $dp->status}}</td>
                             <td>
+                                <a href="{{ route('editDataPenjualan', $dp->id) }}" class="settings" title="Edit" data-toggle="tooltip"><i class="bi bi-pencil-fill"></i></a>
                                 <a href="{{ route('deleteDataPenjualan', $dp->id) }}" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Anda Yakin Ingin Menghapus Data Ini?');"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>

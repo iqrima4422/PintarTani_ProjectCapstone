@@ -79,7 +79,15 @@ class AdminController extends Controller
     function updateDataPenjualan(Request $request, $id)
     {
         $dataPenjualan = Transaksi::find($id);
-        $dataPenjualan->update($request->all());
+
+        //melakukan validasi data
+        $request->validate([
+            'status' => 'required',
+        ]);
+
+        $dataPenjualan->status = $request->status;
+        $dataPenjualan->save();
+
         return redirect('/dataPenjualan');
     }
 

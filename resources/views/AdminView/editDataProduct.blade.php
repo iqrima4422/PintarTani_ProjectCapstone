@@ -17,7 +17,7 @@
                     @endif
                 <form method="post" enctype="multipart/form-data" action="{{ route('UpdateProduct', [$product->id]) }}" id="myForm" >
                 @csrf
-                
+
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <label for="inputProduct">Product</label>
@@ -29,22 +29,15 @@
                         @enderror
                     </div>
                     <div class="form-group col-md-6">
-                    <label for="Supplier">Supplier Name</label>
-                    <select name="supplier" class="form-control">
-                        @foreach ($supplier as $spy)
-                        <option value="{{ $spy ->id }}">{{$spy->nama}}</option>
-                        @endforeach
-                    </select>
-                    {{-- <label for="Supplier">ID Supplier</label>
-                    <input type="text" name="supplier" class="form-control @error('supplier') is-invalid @enderror" value="{{ old( 'supplier', $product->supplier_id) }}" required autofocus>
-                        @error('product')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror --}}
+                        <label for="Supplier">Supplier Name</label>
+                        <select name="supplier" class="form-control">
+                            @foreach ($supplier as $spy)
+                            <option value="{{ $spy ->id }}">{{$spy->nama}}</option>
+                            @endforeach
+                        </select>
                     </div>
                     </div>
-            
+
                 <div class="form-group col-md-5">
                     <label for="Merk">Merk</label>
                     <input type="text" name="merk" class="form-control @error('merk') is-invalid @enderror" value="{{ old( 'merk', $product->merk) }}" required autofocus>
@@ -76,15 +69,15 @@
                         @enderror
                     </div>
                     <div class="form-group col-md-6">
-                    <label for="kategori">Kategori</label>
-                    <select id="kategori" class="form-control" name="kategori">
-                        <option value = "Bahan Dapur">Bahan Dapur</option>
-                        <option value = "Perlengkapan Mandi">Perlengkapan Mandi</option>
-                        <option value = "Makanan Instan">Makanan Instan</option>
-                    </select>
+                        <label for="kategori">Kategori</label>
+                        <select id="kategori" class="form-control" name="kategori">
+                            <option value = "Bahan Dapur">Bahan Dapur</option>
+                            <option value = "Perlengkapan Mandi">Perlengkapan Mandi</option>
+                            <option value = "Makanan Instan">Makanan Instan</option>
+                        </select>
                     </div>
-                    
-                   
+
+
                 </div>
                 </div>
 
@@ -108,28 +101,28 @@
             </div>
         </div>
     </div>
-                    
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
-        
+
     $(document).ready(function (e) {
-    
+
     $('#image').change(function(){
-                
+
         let reader = new FileReader();
-    
-        reader.onload = (e) => { 
-    
-        $('#preview-image-before-upload').attr('src', e.target.result); 
+
+        reader.onload = (e) => {
+
+        $('#preview-image-before-upload').attr('src', e.target.result);
         }
-    
-        reader.readAsDataURL(this.files[0]); 
-    
+
+        reader.readAsDataURL(this.files[0]);
+
     });
-    
+
     });
-    
+
 </script>
 
 @endsection
