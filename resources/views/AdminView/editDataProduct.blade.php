@@ -71,9 +71,10 @@
                     <div class="form-group col-md-6">
                         <label for="kategori">Kategori</label>
                         <select id="kategori" class="form-control" name="kategori">
-                            <option value = "Bahan Dapur">Bahan Dapur</option>
-                            <option value = "Perlengkapan Mandi">Perlengkapan Mandi</option>
-                            <option value = "Makanan Instan">Makanan Instan</option>
+                            <option value = "Sayuran">Sayuran</option>
+                            <option value = "Buah">Buah</option>
+                            <option value = "Pupuk">Pupuk</option>
+                            <option value = "Umbi-umbian">Umbi-umbian</option>
                         </select>
                     </div>
 
