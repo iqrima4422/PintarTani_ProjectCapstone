@@ -44,6 +44,15 @@
                     @enderror
                 </div>
                 <div class="form-group">
+                    <label for="note">Note</label>
+                    <input type="text" name="note" class="form-control @error('note') is-invalid @enderror" value="{{ old( 'note', $dataPenjualan->note)}}" disabled >
+                    @error('note')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
+                <div class="form-group">
                     <label for="tanggal">Tanggal Transaksi</label>
                     <input type="text" name="tanggal" class="form-control @error('tanggal') is-invalid @enderror" value="{{ old( 'tanggal', $dataPenjualan->created_at)}}" disabled >
                     @error('tanggal')

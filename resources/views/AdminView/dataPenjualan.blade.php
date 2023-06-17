@@ -235,6 +235,7 @@
                             <th>Nama Barang</th>
                             <th>Harga Satuan</th>
                             <th>Quantity</th>
+                            <th>Note</th>
                             <th>Tanggal Transaksi</th>
                             <th>Status</th>
                             <th>Action</th>
@@ -248,6 +249,7 @@
                             <td>{{ $dp->products->product}}</td>
                             <td>{{ $dp->products->harga}}</td>
                             <td>{{ $dp->qty}}</td>
+                            <td>{{ $dp->note}}</td>
                             <td>{{ $dp->created_at}}</td>
                             <td>{{ $dp->status}}</td>
                             <td>
