@@ -11,3 +11,7 @@ ID Tim : C23-M4070
 - Yoga Rahmahadi (F059XB148)
 - Achmad Syarif Arifiansyah (F080XB367)
 - Muhammad Rizqy Akbar (F088XB144)
+
+## Link deploy
+
+https://c13a-180-248-18-207.ngrok-free.app
