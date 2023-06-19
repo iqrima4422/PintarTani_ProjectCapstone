@@ -2,7 +2,7 @@
 ![icon-pintarTani](https://github.com/iqrima4422/PintarTani_ProjectCapstone/assets/79218009/868094fb-963a-4377-9187-6681236dd5a4)
 
 Proyek PintarTani bertujuan untuk mengembangkan sebuah platform digital yang akan menghubungkan konsumen dan petani khususnya dalam sektor pertanian di Kelurahan Tadukan Raga, Kecamatan STM Hilir, Kabupaten Deli Serdang, Provinsi Sumatera Utara. Meningkatkan kesejahteraan petani dan masyarakat setempat melalui peningkatan akses pasar, pelatihan pertanian yang ramah lingkungan, dan peningkatan kesadaran publik tentang program pertanian berkelanjutan adalah tujuan utama proyek ini.
-Platform ini akan menyediakan fitur seperti sistem pemesanan online, informasi produk, dan edukasi pertanian.
+Platform ini akan menyediakan fitur utama yaitu sistem pemesanan online dan edukasi pertanian.
 
 ## Tim Capstone Project
 
