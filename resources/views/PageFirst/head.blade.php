@@ -1,8 +1,10 @@
 <meta charset="utf-8">
-<title>Pintar Tani - Webite Kesejahteraan Penduduk</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
+<meta name="dicoding:email" content="muhammadrizqyakbar@students.polmed.ac.id">
+
+<title>Pintar Tani - Webite Kesejahteraan Penduduk</title>
 
 <!-- Favicon -->
 <link href="{{asset('img/hero/fav-pintarTani.png')}}" rel="icon">
