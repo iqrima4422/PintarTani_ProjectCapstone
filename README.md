@@ -1,6 +1,6 @@
 # Pintar Tani - Pintar Bertani, Mudah Berbelanja
 
-Proyek PintarTani bertujuan untuk mengembangkan sebuah platform digital yang akan menghubungkan konsumen dan petani. Meningkatkan kesejahteraan petani dan masyarakat setempat melalui peningkatan akses pasar, pelatihan pertanian yang ramah lingkungan, dan peningkatan kesadaran publik tentang program pertanian berkelanjutan adalah tujuan utama proyek ini.
+Proyek PintarTani bertujuan untuk mengembangkan sebuah platform digital yang akan menghubungkan konsumen dan petani khususnya dalam sektor pertanian di Kelurahan Tadukan Raga, Kecamatan STM Hilir, Kabupaten Deli Serdang, Provinsi Sumatera Utara. Meningkatkan kesejahteraan petani dan masyarakat setempat melalui peningkatan akses pasar, pelatihan pertanian yang ramah lingkungan, dan peningkatan kesadaran publik tentang program pertanian berkelanjutan adalah tujuan utama proyek ini.
 Platform ini akan menyediakan fitur seperti sistem pemesanan online, informasi produk, dan edukasi pertanian.
 
 ## Tim Capstone Project
