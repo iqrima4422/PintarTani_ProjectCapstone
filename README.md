@@ -8,10 +8,12 @@ Platform ini akan menyediakan fitur utama yaitu sistem pemesanan online dan eduk
 
 ID Tim : C23-M4070
 
-- Iqri Mannisa' Buchori (F059YB149)
-- Yoga Rahmahadi (F059XB148)
-- Achmad Syarif Arifiansyah (F080XB367)
-- Muhammad Rizqy Akbar (F088XB144)
+<ul>
+    <li>Iqri Mannisa' Buchori (F059YB149) <a href="https://github.com/iqrima4422">GitHub</a></li>
+    <li>Yoga Rahmahadi (F059XB148) <a href="https://github.com/yogahd">GitHub</a></li>
+    <li>Achmad Syarif Arifiansyah (F080XB367) <a href="https://github.com/Arifian14">GitHub</a></li>
+    <li>Muhammad Rizqy Akbar (F088XB144) <a href="https://github.com/R1zqy-Akbar">GitHub</a></li>
+</ul>
 
 ## Link deploy
 
